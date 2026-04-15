@@ -1,0 +1,193 @@
+:root {
+  --bg: #f8f3ea;
+  --surface: #ffffff;
+  --surface-soft: #fcfaf6;
+  --primary: #8b6914;
+  --primary-dark: #6f5310;
+  --text: #2b241c;
+  --muted: #6d6253;
+  --line: #e6dccb;
+  --shadow: 0 20px 50px rgba(54, 35, 5, 0.12);
+  --radius: 22px;
+  --radius-sm: 14px;
+  --container: 1180px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #fffdf9 0%, #f8f3ea 100%);
+  color: var(--text);
+}
+a { text-decoration: none; color: inherit; }
+button, input, select, textarea { font: inherit; }
+img { max-width: 100%; display: block; }
+.container { width: min(92%, var(--container)); margin: 0 auto; }
+.page { display: none; }
+.page.active { display: block; }
+.text-center { text-align: center; }
+.offer-notification {
+  position: sticky; top: 0; z-index: 1001; background: linear-gradient(90deg, #8b6914, #b68d2f); color: #fff;
+}
+.offer-inner { width: min(92%, var(--container)); margin: 0 auto; display: flex; gap: 16px; align-items: center; padding: 10px 0; }
+.offer-star { font-size: 1.4rem; }
+.offer-text p { margin: 2px 0 0; font-size: .93rem; }
+.offer-close { margin-left: auto; background: transparent; border: 0; color: #fff; font-size: 1.1rem; cursor: pointer; }
+.header {
+  position: sticky; top: 44px; z-index: 1000; backdrop-filter: blur(10px); background: rgba(255, 252, 246, 0.9); border-bottom: 1px solid var(--line);
+}
+.header-inner { width: min(92%, var(--container)); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 84px; }
+.logo-area { display: inline-flex; align-items: center; gap: 14px; }
+.logo-icon { width: 60px; height: 60px; border-radius: 50%; overflow: hidden; box-shadow: var(--shadow); }
+.logo-img { width: 100%; height: 100%; object-fit: cover; }
+.logo-name { display: block; font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); }
+.logo-tagline { display: block; font-size: .86rem; color: var(--muted); }
+.main-nav { display: flex; gap: 18px; align-items: center; }
+.nav-link { color: var(--muted); font-size: .95rem; position: relative; padding: 8px 0; }
+.nav-link.active, .nav-link:hover { color: var(--primary); }
+.nav-link.active::after, .nav-link:hover::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px; background: var(--primary); }
+.header-actions { display: flex; align-items: center; gap: 12px; }
+.visit-counter, .lang-btn { border: 1px solid var(--line); background: var(--surface); height: 44px; border-radius: 999px; padding: 0 14px; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 8px 24px rgba(139,105,20,.08); }
+.visit-counter { color: var(--primary-dark); font-weight: 600; }
+.lang-switcher { position: relative; }
+.lang-btn { cursor: pointer; color: var(--primary-dark); }
+.lang-dropdown {
+  display: none; position: absolute; right: 0; top: calc(100% + 8px); width: 190px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: 8px; z-index: 30;
+}
+.lang-dropdown.open { display: grid; }
+.lang-dropdown button { background: transparent; border: 0; text-align: left; padding: 10px 12px; border-radius: 12px; cursor: pointer; }
+.lang-dropdown button:hover { background: #f5efe2; }
+.hamburger { display: none; background: transparent; border: 0; width: 42px; height: 42px; padding: 0; }
+.hamburger span { display: block; width: 100%; height: 2px; margin: 6px 0; background: var(--text); }
+.hero { position: relative; min-height: 88vh; overflow: hidden; display: grid; place-items: center; }
+.hero-videos, .hero-overlay { position: absolute; inset: 0; }
+.hero-videos { background: #000; }
+.hero-video-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .7s ease; }
+.hero-video-slide.active { opacity: 1; }
+.hero-video-slide video { width: 100%; height: 100%; object-fit: cover; }
+.hero-video-fallback {
+  width: 100%; height: 100%; background: linear-gradient(135deg, rgba(139,105,20,.9), rgba(53,35,12,.5)), url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&h=1080&fit=crop') center/cover;
+}
+.video-credit { position: absolute; right: 18px; bottom: 18px; z-index: 2; color: #fff; background: rgba(0,0,0,.45); padding: 8px 12px; border-radius: 999px; font-size: .8rem; }
+.hero-overlay { background: linear-gradient(180deg, rgba(22,15,8,.35), rgba(22,15,8,.6)); }
+.hero-content { position: relative; z-index: 2; text-align: center; color: #fff; width: min(92%, 760px); }
+.hero-sub { letter-spacing: .18em; text-transform: uppercase; font-size: .88rem; margin-bottom: 12px; }
+.hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1.08; margin: 0 0 14px; }
+.hero-desc { font-size: 1.03rem; margin: 0 auto 28px; max-width: 650px; }
+.hero-btns { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+.btn-gold, .btn-outline {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 22px; border-radius: 999px; border: 1px solid transparent; cursor: pointer; transition: .25s ease;
+}
+.btn-gold { background: var(--primary); color: #fff; box-shadow: var(--shadow); }
+.btn-gold:hover { background: var(--primary-dark); transform: translateY(-2px); }
+.btn-outline { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.4); color: #fff; }
+.section { padding: 80px 0; }
+.section-header { margin-bottom: 30px; }
+.section-header.center { text-align: center; }
+.section-badge { display: inline-flex; background: #f1e7d3; color: var(--primary-dark); border-radius: 999px; padding: 8px 14px; font-size: .84rem; font-weight: 700; margin-bottom: 12px; }
+.section-header h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 10px; }
+.section-header p { color: var(--muted); max-width: 720px; margin: 0 auto; }
+.top-therapy-cards, .therapies-grid, .benefits-grid, .why-grid, .membership-grid, .testimonial-grid, .hygiene-grid, .masonry-grid, .more-grid {
+  display: grid; gap: 22px;
+}
+.top-therapy-cards { grid-template-columns: repeat(3, 1fr); }
+.therapies-grid { grid-template-columns: repeat(2, 1fr); }
+.benefits-grid, .why-grid, .membership-grid, .testimonial-grid, .hygiene-grid, .more-grid { grid-template-columns: repeat(3, 1fr); }
+.masonry-grid { grid-template-columns: repeat(4, 1fr); }
+.top-card, .therapy-card, .why-card, .benefit-item, .testimonial-card, .membership-card, .hygiene-item, .policy-card, .contact-card, .legal-card, .about-card-list > div {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.top-card { overflow: hidden; position: relative; }
+.top-card.featured { border-color: rgba(139,105,20,.45); }
+.top-card-badge { position: absolute; top: 14px; left: 14px; background: var(--primary); color: #fff; padding: 6px 10px; border-radius: 999px; font-size: .76rem; z-index: 2; }
+.top-card-media { position: relative; height: 230px; overflow: hidden; }
+.top-card-media video, .top-card-media img, .therapy-media video, .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.top-card-body, .therapy-body, .membership-card, .why-card, .testimonial-card, .hygiene-item, .policy-card, .contact-card { padding: 22px; }
+.top-card-body h3, .therapy-body h3, .membership-card h3, .why-card h3, .policy-card h3 { margin: 0 0 10px; font-family: 'Playfair Display', serif; }
+.top-card-body p, .therapy-body p, .membership-card p, .why-card p, .benefit-overlay p, .testimonial-card p, .policy-card p, .contact-card p, .legal-card p, .legal-card li { color: var(--muted); line-height: 1.75; }
+.top-card-meta, .therapy-meta { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin: 18px 0; color: var(--primary-dark); font-weight: 600; }
+.top-card-actions, .therapy-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.small-link { color: var(--primary); font-weight: 700; font-size: .9rem; }
+.why-icon { width: 58px; height: 58px; border-radius: 18px; display: grid; place-items: center; background: #f3eadb; color: var(--primary); font-size: 1.3rem; margin-bottom: 14px; }
+.benefit-item { overflow: hidden; position: relative; min-height: 320px; }
+.benefit-visual { position: relative; height: 100%; }
+.benefit-overlay { position: absolute; inset: auto 18px 18px 18px; background: rgba(28,23,16,.78); color: #fff; border-radius: 18px; padding: 18px; }
+.benefit-overlay i { font-size: 1.3rem; color: #f2d58b; }
+.testimonial-card strong { display: block; margin-top: 12px; }
+.booking-banner { padding: 28px 0 72px; }
+.booking-banner-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; background: linear-gradient(135deg, #8b6914, #b99031); color: #fff; border-radius: 28px; padding: 28px; box-shadow: var(--shadow); }
+.booking-text h2 { margin: 0 0 8px; font-family: 'Playfair Display', serif; }
+.booking-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.page-hero { min-height: 42vh; position: relative; display: grid; place-items: center; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; inset: 0; background-position: center; background-size: cover; filter: brightness(.7); }
+.page-hero-therapy::before { background-image: url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&h=600&fit=crop'); }
+.page-hero-gallery::before { background-image: url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1920&h=600&fit=crop'); }
+.page-hero-membership::before { background-image: url('https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1920&h=600&fit=crop'); }
+.page-hero-about::before { background-image: url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1920&h=600&fit=crop'); }
+.page-hero-contact::before, .page-hero-more::before { background-image: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1920&h=600&fit=crop'); }
+.page-hero-overlay { position: absolute; inset: 0; background: rgba(20, 14, 8, 0.45); z-index: 1; }
+.page-hero-content { position: relative; z-index: 2; text-align: center; color: #fff; width: min(92%, 760px); }
+.page-hero-content h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.3rem, 5vw, 4rem); margin: 0 0 10px; }
+.therapy-card { overflow: hidden; }
+.therapy-media { position: relative; height: 250px; }
+.video-link-badge { position: absolute; top: 14px; left: 14px; z-index: 2; background: rgba(0,0,0,.6); color: #fff; padding: 8px 12px; border-radius: 999px; font-size: .78rem; }
+.carousel-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 14px; }
+.carousel-strip img { height: 74px; border-radius: 12px; object-fit: cover; cursor: pointer; }
+.carousel-frame { margin-top: 14px; height: 220px; border-radius: 18px; overflow: hidden; background: #eee; }
+.hygiene-item { text-align: center; }
+.hygiene-item i { font-size: 1.6rem; color: var(--primary); margin-bottom: 12px; }
+.virtual-tour { margin-bottom: 28px; }
+.video-wrapper { position: relative; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); }
+.tour-video { width: 100%; height: 420px; object-fit: cover; }
+.video-overlay-text { position: absolute; inset: auto 22px 22px 22px; background: rgba(12,10,8,.58); color: #fff; border-radius: 18px; padding: 18px; }
+.gallery-item { position: relative; overflow: hidden; border-radius: 20px; min-height: 250px; box-shadow: var(--shadow); cursor: pointer; }
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-item img { transition: transform .35s ease; }
+.membership-card ul { padding-left: 18px; color: var(--muted); }
+.about-layout, .contact-layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: 28px; }
+.about-card-list { display: grid; gap: 16px; }
+.contact-form { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; display: grid; gap: 14px; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; background: var(--surface-soft);
+}
+.form-status { min-height: 24px; color: var(--primary-dark); font-weight: 600; }
+.legal-section { padding-top: 100px; }
+.legal-card { padding: 30px; }
+.legal-card h1 { margin-top: 0; font-family: 'Playfair Display', serif; }
+.legal-card h3 { font-family: 'Playfair Display', serif; margin-top: 28px; }
+.site-footer { border-top: 1px solid var(--line); background: #fffaf2; padding: 28px 0; }
+.footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.lightbox {
+  position: fixed; inset: 0; background: rgba(0,0,0,.86); display: none; align-items: center; justify-content: center; z-index: 1200;
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 85vw; max-height: 78vh; border-radius: 16px; }
+.lightbox button { position: absolute; background: rgba(255,255,255,.12); border: 0; color: #fff; font-size: 2rem; width: 54px; height: 54px; border-radius: 50%; cursor: pointer; }
+.lightbox-close { top: 18px; right: 18px; }
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+@media (max-width: 1100px) {
+  .main-nav { gap: 12px; }
+  .top-therapy-cards, .benefits-grid, .why-grid, .membership-grid, .testimonial-grid, .hygiene-grid, .masonry-grid, .therapies-grid, .more-grid, .about-layout, .contact-layout { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px) {
+  .header { top: 42px; }
+  .main-nav { display: none; position: absolute; top: 100%; left: 4%; right: 4%; background: #fffdf8; border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); padding: 16px; flex-direction: column; align-items: flex-start; }
+  .main-nav.open { display: flex; }
+  .hamburger { display: inline-block; }
+  .offer-inner, .header-inner, .footer-inner, .booking-banner-inner { flex-direction: column; align-items: flex-start; }
+  .header-actions { align-self: stretch; justify-content: flex-end; }
+  .top-therapy-cards, .benefits-grid, .why-grid, .membership-grid, .testimonial-grid, .hygiene-grid, .masonry-grid, .therapies-grid, .more-grid, .about-layout, .contact-layout { grid-template-columns: 1fr; }
+  .tour-video { height: 300px; }
+}
+@media (max-width: 560px) {
+  .hero { min-height: 74vh; }
+  .hero-title { font-size: 2.4rem; }
+  .hero-btns, .booking-actions { flex-direction: column; width: 100%; }
+  .btn-gold, .btn-outline { width: 100%; }
+  .visit-counter, .lang-btn { height: 40px; padding: 0 12px; }
+  .header-actions { gap: 8px; }
+  .logo-name { font-size: 1.25rem; }
+}

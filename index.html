@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mauli Spa - Ayurvedic Massage & Wellness</title>
+  <meta name="description" content="Mauli Spa - Ayurvedic wellness therapies, massage, membership plans, gallery, about, contact, privacy policy and terms." />
+  <meta name="keywords" content="Mauli Spa, Ayurvedic Massage Pune, Kothrud Spa, Deep Tissue Therapy, Til Tel Massage, Wellness Therapy" />
+  <meta property="og:title" content="Mauli Spa - Best Ayurvedic Massage in Pune" />
+  <meta property="og:description" content="Relax, rejuvenate and restore through premium Ayurvedic wellness therapies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maulispa.in" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&h=630&fit=crop" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="offerNotification" class="offer-notification">
+    <div class="offer-inner">
+      <span class="offer-star">⭐</span>
+      <div class="offer-text">
+        <strong data-i18n="offerTitle">Special Offer!</strong>
+        <p data-i18n="offerDesc">Free facial + 20% off on first session for the first 50 members.</p>
+      </div>
+      <button class="offer-close" type="button" aria-label="Close offer" onclick="closeOffer()">✕</button>
+    </div>
+  </div>
+
+  <header id="mainHeader" class="header">
+    <div class="header-inner">
+      <a href="#" class="logo-area" onclick="showPage('home'); return false;">
+        <div class="logo-icon">
+          <img src="https://via.placeholder.com/60x60/8B6914/FFFFFF?text=M" alt="Mauli Spa Logo" class="logo-img" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Mauli Spa</span>
+          <span class="logo-tagline" data-i18n="logoTagline">Mauli Ayurvedic Massage Therapy</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#" class="nav-link active" data-page="home" onclick="showPage('home'); setActive(this); return false;" data-i18n="navHome">Home</a>
+        <a href="#" class="nav-link" data-page="therapies" onclick="showPage('therapies'); setActive(this); return false;" data-i18n="navTherapies">Wellness Therapies</a>
+        <a href="#" class="nav-link" data-page="gallery" onclick="showPage('gallery'); setActive(this); return false;" data-i18n="navGallery">Gallery</a>
+        <a href="#" class="nav-link" data-page="membership" onclick="showPage('membership'); setActive(this); return false;" data-i18n="navMembership">Membership Plan</a>
+        <a href="#" class="nav-link" data-page="about" onclick="showPage('about'); setActive(this); return false;" data-i18n="navAbout">About</a>
+        <a href="#" class="nav-link" data-page="contact" onclick="showPage('contact'); setActive(this); return false;" data-i18n="navContact">Contact Us</a>
+        <a href="#" class="nav-link" data-page="more" onclick="showPage('more'); setActive(this); return false;" data-i18n="navMore">More</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="visit-counter" title="Live visitor counter">
+          <i class="fas fa-eye"></i>
+          <span id="visitCount">1284</span>
+        </div>
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn" type="button" onclick="toggleLang()">
+            <i class="fas fa-globe"></i>
+            <span id="currentLang">EN</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button type="button" onclick="setLang('en')">🇬🇧 English</button>
+            <button type="button" onclick="setLang('hi')">🇮🇳 हिंदी</button>
+            <button type="button" onclick="setLang('mr')">मराठी</button>
+            <button type="button" onclick="setLang('ta')">தமிழ்</button>
+            <button type="button" onclick="setLang('te')">తెలుగు</button>
+            <button type="button" onclick="setLang('bn')">বাংলা</button>
+            <button type="button" onclick="setLang('gu')">ગુજરાતી</button>
+            <button type="button" onclick="setLang('kn')">ಕನ್ನಡ</button>
+          </div>
+        </div>
+        <button class="hamburger" id="hamburger" type="button" onclick="toggleMobileMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="pagesContainer">
+    <div id="page-home" class="page active">
+      <section class="hero" id="home">
+        <div class="hero-videos" id="heroVideos"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-sub" data-i18n="heroSub">Ancient Ayurvedic Wellness</p>
+          <h1 class="hero-title" data-i18n="heroTitle">Rejuvenate Your Soul and Body</h1>
+          <p class="hero-desc" data-i18n="heroDesc">Restore your body, mind and daily balance with soothing Ayurvedic massage therapies.</p>
+          <div class="hero-btns">
+            <button class="btn-gold" onclick="showPage('contact')" data-i18n="bookSession">Book Your Session</button>
+            <a href="https://wa.me/c/919307360513" target="_blank" rel="noopener" class="btn-outline" data-i18n="viewCatalogue">View Catalogue</a>
+          </div>
+        </div>
+        <div class="hero-dots" id="heroDots"></div>
+      </section>
+
+      <section class="section top-therapies">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge" data-i18n="topDemand">Top Demanding Therapies</span>
+            <h2 data-i18n="featuredServices">Our Featured Services</h2>
+          </div>
+          <div class="top-therapy-cards" id="topTherapyCards"></div>
+        </div>
+      </section>
+
+      <section class="section why-mauli">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-badge" data-i18n="whyChooseBadge">Why Choose Us</span>
+            <h2 data-i18n="whyMauli">Why Mauli Ayurvedic Massage Therapy?</h2>
+            <p data-i18n="whyDesc">Traditional care, premium ambience and genuine wellness support.</p>
+          </div>
+          <div class="why-grid" id="whyGrid"></div>
+        </div>
+      </section>
+
+      <section class="section benefits-section">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-badge" data-i18n="benefitsBadge">Benefits</span>
+            <h2 data-i18n="benefitsTitle">What You Will Get</h2>
+          </div>
+          <div class="benefits-grid" id="benefitsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-badge" data-i18n="reviewsBadge">Google Reviews</span>
+            <h2 data-i18n="reviewsTitle">What Clients Say</h2>
+          </div>
+          <div class="testimonial-grid" id="testimonialGrid"></div>
+        </div>
+      </section>
+
+      <section class="booking-banner">
+        <div class="container">
+          <div class="booking-banner-inner">
+            <div class="booking-text">
+              <h2 data-i18n="startJourney">Start Your Wellness Journey Today</h2>
+              <p data-i18n="startJourneyDesc">Talk to us and get a personalized therapy recommendation.</p>
+            </div>
+            <div class="booking-actions">
+              <button class="btn-gold" onclick="showPage('contact')" data-i18n="bookSession">Book Your Session</button>
+              <a href="tel:9156972622" class="btn-outline"><i class="fas fa-phone"></i> <span data-i18n="callNow">Call Now</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-therapies" class="page">
+      <div class="page-hero page-hero-therapy">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1 data-i18n="therapyPageTitle">Wellness Therapies</h1>
+          <p data-i18n="therapyPageDesc">Holistic therapies designed for relaxation, pain relief and inner balance.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-badge" data-i18n="allServicesBadge">All Services</span>
+            <h2 data-i18n="allServicesTitle">Our Wellness Therapies</h2>
+            <p data-i18n="allServicesDesc">Each therapy includes stroke video reference and a deeper detail image carousel.</p>
+          </div>
+          <div class="therapies-grid" id="therapiesGrid"></div>
+        </div>
+      </section>
+      <section class="section hygiene-section">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-badge" data-i18n="safetyFirst">Safety First</span>
+            <h2 data-i18n="hygieneTitle">Our Hygiene Standards</h2>
+          </div>
+          <div class="hygiene-grid" id="hygieneGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-gallery" class="page">
+      <div class="page-hero page-hero-gallery">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1 data-i18n="galleryTitle">Gallery</h1>
+          <p data-i18n="galleryDesc">Explore our calm ambience, therapy rooms and wellness setting.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="virtual-tour">
+            <h2 class="text-center" data-i18n="virtualTour">Virtual Tour</h2>
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline class="tour-video">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+              </video>
+              <div class="video-overlay-text">
+                <h3 data-i18n="virtualTourTitle">Mauli Spa - Virtual Tour</h3>
+                <p data-i18n="virtualTourDesc">Take a quick look at our peaceful wellness atmosphere.</p>
+              </div>
+            </div>
+          </div>
+          <div class="masonry-grid" id="galleryGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-membership" class="page">
+      <div class="page-hero page-hero-membership">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1 data-i18n="membershipTitle">Membership Plan</h1>
+          <p data-i18n="membershipDesc">Choose a plan that supports your regular wellness routine.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <div class="membership-grid" id="membershipGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-about" class="page">
+      <div class="page-hero page-hero-about">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1 data-i18n="aboutTitle">About Mauli Spa</h1>
+          <p data-i18n="aboutDesc">A premium Ayurvedic massage center focused on calm, care and authentic therapy.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container about-layout">
+          <div>
+            <h2 data-i18n="ourStoryTitle">Our Story</h2>
+            <p data-i18n="ourStoryDesc">Mauli Spa was created to bring together authentic Ayurvedic wisdom, clean wellness practices and a peaceful modern spa experience for everyday healing.</p>
+            <p data-i18n="aboutExtra">We focus on comfort, body balance, stress reduction and therapy-led support delivered by trained staff in a hygienic environment.</p>
+          </div>
+          <div class="about-card-list" id="aboutStats"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-contact" class="page">
+      <div class="page-hero page-hero-contact">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1 data-i18n="contactTitle">Contact Us</h1>
+          <p data-i18n="contactDesc">Book a session, ask a question or visit us in Kothrud, Pune.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-card">
+            <h2 data-i18n="contactInfoTitle">Contact Information</h2>
+            <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="addressText">Shop No 112, First Floor, The Business Hub, Karve Road, Kothrud, Pune 411038</span></p>
+            <p><i class="fas fa-phone"></i> +91 9307360513 / +91 9156972622</p>
+            <p><i class="fas fa-clock"></i> <span data-i18n="timingText">Open daily from 10:00 AM to 9:00 PM</span></p>
+            <p><i class="fas fa-envelope"></i> info@maulispa.in</p>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <select id="therapySelect">
+              <option value="" data-i18n="selectTherapy">Select Therapy</option>
+            </select>
+            <textarea id="message" rows="5" placeholder="Tell us about your requirement"></textarea>
+            <button class="btn-gold" type="submit" data-i18n="sendMessage">Send Message</button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-more" class="page">
+      <div class="page-hero page-hero-more">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+          <h1 data-i18n="moreTitle">More Information</h1>
+          <p data-i18n="moreDesc">Quick access to policies, wellness notes and important guidance.</p>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container more-grid">
+          <article class="policy-card">
+            <h3 data-i18n="termsTitle">Terms & Conditions</h3>
+            <p data-i18n="termsShort">Read our booking, cancellation, conduct and service usage terms.</p>
+            <button class="btn-outline" onclick="showPage('terms')" data-i18n="readMore">Read More</button>
+          </article>
+          <article class="policy-card">
+            <h3 data-i18n="privacyTitle">Privacy Policy</h3>
+            <p data-i18n="privacyShort">Understand how we collect, store and use your information responsibly.</p>
+            <button class="btn-outline" onclick="showPage('privacy')" data-i18n="readMore">Read More</button>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-terms" class="page">
+      <section class="section legal-section">
+        <div class="container legal-card">
+          <h1 data-i18n="termsTitle">Terms & Conditions</h1>
+          <div id="termsContent"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-privacy" class="page">
+      <section class="section legal-section">
+        <div class="container legal-card">
+          <h1 data-i18n="privacyTitle">Privacy Policy</h1>
+          <div id="privacyContent"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" type="button">✕</button>
+    <button class="lightbox-prev" type="button" onclick="event.stopPropagation(); lightboxNav(-1)">‹</button>
+    <img id="lightboxImg" src="" alt="Gallery image" />
+    <button class="lightbox-next" type="button" onclick="event.stopPropagation(); lightboxNav(1)">›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Mauli Spa</h3>
+        <p data-i18n="footerDesc">Ayurvedic wellness therapies for relaxation, relief and renewal.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" onclick="showPage('terms'); return false;" data-i18n="termsTitle">Terms & Conditions</a>
+        <a href="#" onclick="showPage('privacy'); return false;" data-i18n="privacyTitle">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -549,3 +549,815 @@ select,input,textarea{font-family:var(--fb);}
   .bm-gallery{grid-template-columns:1fr 1fr;}
   .learn-grid{grid-template-columns:1fr;}
 }
+
+/* ============================================================
+   MAULI SPA V2 — ADDITIONAL CSS (Updates)
+   ============================================================ */
+
+/* ── HERO VIDEO — FULL HD AUTO-FIT ─────────────────────── */
+.hero { position:relative; width:100%; height:100vh; min-height:600px; overflow:hidden; }
+.hero-video-wrap { position:absolute; inset:0; z-index:0; }
+.hero-video {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;          /* auto-fit to container regardless of source resolution */
+  object-position:center;
+  opacity:0;
+  transition:opacity 1s ease;
+  pointer-events:none;
+}
+.hero-video.active { opacity:1; }
+
+/* ── STROKE VIDEO (section headers) ──────────────────────── */
+.stroke-video-wrap {
+  position:relative;
+  width:100%;
+  max-width:900px;
+  margin:20px auto 32px;
+  border-radius:16px;
+  overflow:hidden;
+  aspect-ratio:16/5;
+  box-shadow:0 8px 32px rgba(0,0,0,.18);
+}
+.stroke-video {
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
+.stroke-video-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(135deg,rgba(0,80,40,.55),rgba(183,134,11,.35));
+  display:flex; align-items:center; justify-content:center;
+}
+.stroke-video-overlay span {
+  color:#fff;
+  font-family:var(--fd,'Georgia',serif);
+  font-size:clamp(1.1rem,3vw,2rem);
+  font-weight:700;
+  letter-spacing:.04em;
+  text-shadow:0 2px 8px rgba(0,0,0,.5);
+  text-align:center;
+  padding:0 16px;
+}
+
+/* ── THERAPY CARD STROKE VIDEO ────────────────────────────── */
+.tc-media { position:relative; overflow:hidden; aspect-ratio:4/3; border-radius:12px 12px 0 0; }
+.tc-img {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:opacity .4s ease;
+  z-index:1;
+}
+.tc-stroke-video {
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  opacity:0;
+  transition:opacity .4s ease;
+  z-index:2;
+  pointer-events:none;
+}
+.tc:hover .tc-stroke-video { opacity:1; }
+.tc:hover .tc-img { opacity:0; }
+.tc-overlay-btn {
+  position:absolute; bottom:10px; right:10px;
+  z-index:3;
+  opacity:0;
+  transition:opacity .3s ease;
+}
+.tc:hover .tc-overlay-btn { opacity:1; }
+.tc-see-more {
+  background:rgba(0,0,0,.65);
+  color:#fff;
+  border:none;
+  border-radius:20px;
+  padding:6px 14px;
+  font-size:.8rem;
+  cursor:pointer;
+  display:flex; align-items:center; gap:6px;
+  backdrop-filter:blur(4px);
+}
+.tc-see-more:hover { background:var(--gold,#B7860B); }
+
+/* ── THERAPY MODAL CAROUSEL ───────────────────────────────── */
+.tm-carousel {
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  border-radius:12px;
+  margin-bottom:8px;
+  aspect-ratio:3/2;
+}
+.tm-carousel-track {
+  display:flex;
+  width:600%; /* 6 slides × 100% */
+  height:100%;
+  transition:transform .4s ease;
+}
+.tm-slide {
+  width:calc(100%/6);
+  flex-shrink:0;
+  height:100%;
+}
+.tm-slide img {
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
+.tm-carousel-prev,
+.tm-carousel-next {
+  position:absolute; top:50%; transform:translateY(-50%);
+  background:rgba(0,0,0,.55);
+  color:#fff; border:none;
+  width:36px; height:36px;
+  border-radius:50%;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  z-index:10;
+  transition:background .2s;
+}
+.tm-carousel-prev { left:10px; }
+.tm-carousel-next { right:10px; }
+.tm-carousel-prev:hover,
+.tm-carousel-next:hover { background:var(--gold,#B7860B); }
+.tm-carousel-dots {
+  display:flex; justify-content:center; gap:6px; margin-bottom:16px;
+}
+.tmc-dot {
+  width:8px; height:8px; border-radius:50%;
+  background:#ccc; cursor:pointer;
+  transition:background .2s, transform .2s;
+}
+.tmc-dot.active { background:var(--green,#1A5C35); transform:scale(1.3); }
+
+/* ── LEGAL POPUP MODAL ────────────────────────────────────── */
+.modal-overlay {
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:9999;
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; pointer-events:none;
+  transition:opacity .3s ease;
+}
+.modal-overlay.show { opacity:1; pointer-events:all; }
+.modal-box {
+  background:var(--surface,#fff);
+  border-radius:16px;
+  padding:28px 24px;
+  width:90%;
+  max-width:800px;
+  max-height:82vh;
+  overflow-y:auto;
+  position:relative;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  animation:modalIn .3s ease;
+}
+@keyframes modalIn { from{transform:translateY(30px);opacity:0} to{transform:translateY(0);opacity:1} }
+.modal-close-btn {
+  position:sticky; top:0; float:right;
+  background:var(--green,#1A5C35);
+  color:#fff; border:none;
+  border-radius:20px;
+  padding:6px 16px;
+  cursor:pointer;
+  font-size:.85rem;
+  display:flex; align-items:center; gap:6px;
+  margin-bottom:12px;
+  z-index:10;
+}
+.modal-close-btn:hover { background:var(--gold,#B7860B); }
+.legal-page h2 {
+  font-family:var(--fd,'Georgia',serif);
+  color:var(--green,#1A5C35);
+  font-size:1.1rem;
+  margin:20px 0 8px;
+}
+.legal-page p, .legal-page li {
+  font-size:.9rem;
+  line-height:1.8;
+  color:var(--text2,#555);
+}
+.legal-page ul { padding-left:20px; margin-bottom:12px; }
+
+/* ── SOCIAL STRIP — FULL WIDTH CHIPS ──────────────────────── */
+.social-section-header {
+  text-align:center;
+  font-family:var(--fd,'Georgia',serif);
+  font-size:clamp(1.2rem,3vw,1.8rem);
+  color:var(--green,#1A5C35);
+  font-weight:700;
+  margin:40px 0 20px;
+  letter-spacing:.03em;
+}
+.social-strip {
+  display:flex;
+  flex-wrap:nowrap;
+  gap:12px;
+  padding:0 16px 20px;
+  overflow-x:auto;
+}
+.social-strip a {
+  flex:1 1 0;
+  min-width:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:18px 12px;
+  border-radius:12px;
+  font-size:.95rem;
+  font-weight:600;
+  text-decoration:none;
+  color:#fff;
+  white-space:nowrap;
+  transition:transform .2s, box-shadow .2s;
+}
+.social-strip a:hover { transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,.2); }
+.social-strip a i { font-size:1.3rem; }
+
+/* ── WELLNESS MEMBERSHIP PAGE TITLE ───────────────────────── */
+#page-membership .page-hero h1[data-i18n="memberH1"],
+#page-membership .hero-h1 { /* already handled by data-i18n */ }
+
+/* ── COMING SOON BADGE ────────────────────────────────────── */
+.coming-soon-item { position:relative; }
+.coming-soon-badge {
+  position:absolute; top:12px; right:12px;
+  background:var(--gold,#B7860B);
+  color:#fff;
+  font-size:.72rem;
+  font-weight:700;
+  padding:4px 10px;
+  border-radius:20px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+.lg-item { position:relative; }
+
+/* ── COUPLE MASSAGE CARD BADGE ────────────────────────────── */
+.tc[data-id="couple"] .tc-media::before {
+  content:"💑 Couple Special";
+  position:absolute; top:10px; left:10px;
+  background:linear-gradient(135deg,#e91e8c,#ff6b35);
+  color:#fff; font-size:.72rem; font-weight:700;
+  padding:4px 10px; border-radius:20px; z-index:4;
+}
+
+/* ── FOOTER LEGAL LINKS — BOTTOM RIGHT ONLY ───────────────── */
+.legal-footer-links {
+  display:flex;
+  gap:16px;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+}
+.legal-footer-links a {
+  color:var(--text2,#888);
+  font-size:.8rem;
+  text-decoration:none;
+  transition:color .2s;
+}
+.legal-footer-links a:hover { color:var(--gold,#B7860B); }
+
+/* ── MEMBERSHIP PLAN MULTILINGUAL TEXT ────────────────────── */
+.plan-feats li span { display:inline; }
+
+/* ── MULTI-DEVICE RESPONSIVE ──────────────────────────────── */
+@media (max-width:480px){
+  .stroke-video-wrap { aspect-ratio:16/7; }
+  .social-strip { flex-wrap:wrap; }
+  .social-strip a { flex:1 1 calc(50% - 6px); min-width:unset; }
+  .tm-carousel { aspect-ratio:4/3; }
+  .hero { height:100svh; }
+}
+@media (min-width:481px) and (max-width:768px){
+  .social-strip a { flex:1 1 calc(33% - 8px); }
+  .stroke-video-wrap { aspect-ratio:16/6; }
+}
+@media (min-width:1200px){
+  .stroke-video-wrap { aspect-ratio:21/5; }
+}
+@media (min-width:1920px){
+  .hero-video { object-position:center 30%; }
+}
+
+/* ── THERAPY CARD — TOUCH DEVICES ────────────────────────── */
+@media (hover:none){
+  .tc-overlay-btn { opacity:1; }
+  .tc-stroke-video { display:none; } /* save bandwidth on mobile */
+  .tc-img { opacity:1 !important; }
+}
+
+/* ── FAQ MULTILINGUAL TEXT ────────────────────────────────── */
+.faq-q-text { display:inline; }
+
+/* ============================================================
+   FIX PATCH — Hero 6 videos + Top3 card stroke video on hover
+   ============================================================ */
+
+/* ── HERO: 6 VIDEOS, FULL HD AUTO-FIT ────────────────────── */
+.hero-video-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+.hero-video.active { opacity: 1; }
+
+/* ── HERO: MOBILE — 25% of screen height, below header ─────── */
+@media (max-width: 768px) {
+  .hero {
+    height: 25vh !important;
+    min-height: 160px !important;
+    max-height: 260px !important;
+    margin-top: 0;
+  }
+  .hero-video {
+    object-fit: cover;
+    object-position: center 30%;
+  }
+  /* Hide text content on very small hero */
+  .hero-content {
+    display: none;
+  }
+  .hero-progress {
+    display: none;
+  }
+}
+
+/* On small mobiles keep even tighter */
+@media (max-width: 480px) {
+  .hero {
+    height: 22vh !important;
+    min-height: 130px !important;
+  }
+}
+
+/* ── TOP3 CARD: STROKE VIDEO HOVER (ALL 3 CARDS) ───────────── */
+.top3-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  min-height: 340px;
+  cursor: pointer;
+}
+
+/* Background image layer */
+.top3-bg-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.45s ease;
+  z-index: 1;
+}
+
+/* Stroke video inside each card — hidden by default */
+.top3-stroke-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* On hover of the CARD: show video, hide bg image */
+.top3-card-hover:hover .top3-stroke-video {
+  opacity: 1;
+}
+.top3-card-hover:hover .top3-bg-img {
+  opacity: 0;
+}
+
+/* Overlay sits above video at z-index 3 */
+.top3-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.82) 0%,
+    rgba(0,0,0,0.25) 55%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 20px;
+  transition: background 0.3s ease;
+}
+
+/* Remove old background-image inline style from .top3-card (handled by .top3-bg-img now) */
+.top3-card[style*="background-image"] {
+  background-image: none !important;
+}
+
+/* Touch devices — always show video for top3 */
+@media (hover: none) {
+  .top3-stroke-video {
+    opacity: 1;
+  }
+  .top3-bg-img {
+    opacity: 0;
+  }
+}
+
+/* Mobile: stack top3 cards vertically with reduced height */
+@media (max-width: 600px) {
+  .top3-card {
+    min-height: 220px;
+  }
+}
+
+/* ============================================================
+   PATCH 2 — All 6 fixes: counter, hero, why cards, therapy cards,
+   gallery 24, coming soon base, mobile hero sizing
+   ============================================================ */
+
+/* 1. HIDE VISIT COUNTER (removed from HTML too, belt-and-suspenders) */
+.visit-wrap { display: none !important; }
+
+/* 2. HERO — same size on mobile as other page heroes */
+/* Desktop: full viewport */
+.hero {
+  height: 100vh;
+  min-height: 500px;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    height: 70vh;
+    min-height: 380px;
+  }
+}
+/* Mobile — match other page hero banners (page-hero class) */
+@media (max-width: 768px) {
+  .hero {
+    height: 52vw;      /* same ratio as .page-hero on mobile */
+    min-height: 200px;
+    max-height: 320px;
+  }
+  /* On mobile show hero text but smaller */
+  .hero-content {
+    display: flex;
+    padding: 16px;
+  }
+  .hero-h1 { font-size: clamp(1.4rem, 5vw, 2rem); }
+  .hero-sub { font-size: .82rem; }
+  .hero-eyebrow { font-size: .72rem; }
+  .hero-ctas { gap: 8px; }
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-ghost { padding: 10px 18px; font-size: .8rem; }
+}
+@media (max-width: 480px) {
+  .hero {
+    height: 56vw;
+    min-height: 180px;
+    max-height: 270px;
+  }
+}
+
+/* 3. WHY CARDS — 3 new cards, grid auto-adjusts to 3 cols × 3 rows */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
+
+/* 4. THERAPY CARDS — image fills perfectly, stroke video on hover only */
+.tc { overflow: hidden; border-radius: 16px; background: var(--surface, #fff); box-shadow: 0 4px 20px rgba(0,0,0,.08); }
+
+.tc-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;   /* fixed ratio so image always fills */
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background: #1a1a1a;
+}
+
+.tc-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* always fills the card, no gaps */
+  object-position: center;
+  display: block;
+  opacity: 1;
+  transition: opacity .4s ease;
+  z-index: 1;
+}
+
+.tc-stroke-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .4s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Show video, hide image only on hover (desktop) */
+@media (hover: hover) {
+  .tc:hover .tc-stroke-video { opacity: 1; }
+  .tc:hover .tc-img { opacity: 0; }
+}
+
+/* Mobile: always show image, never show video autoplay */
+@media (hover: none) {
+  .tc-stroke-video { display: none; }
+  .tc-img { opacity: 1 !important; }
+}
+
+/* 5. GALLERY — 24 images, 4-column masonry on desktop */
+.masonry-grid {
+  columns: 4;
+  column-gap: 12px;
+  padding: 0 16px;
+}
+@media (max-width: 1100px) { .masonry-grid { columns: 3; } }
+@media (max-width: 700px)  { .masonry-grid { columns: 2; } }
+@media (max-width: 400px)  { .masonry-grid { columns: 1; } }
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  transition: transform .3s ease;
+}
+.masonry-item:hover img { transform: scale(1.04); }
+.masonry-item-ov {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .3s ease;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.masonry-item:hover .masonry-item-ov { opacity: 1; }
+
+/* 6. COMING SOON — base label under certification card, not floating badge */
+.coming-soon-badge { display: none; }  /* hide old floating badge */
+
+.coming-soon-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--green, #1A5C35), #2d7a50);
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 12px;
+  margin: 4px 0 16px;
+  box-shadow: 0 4px 16px rgba(26,92,53,.25);
+}
+.coming-soon-base i {
+  font-size: 1rem;
+  animation: pulse-icon 1.8s ease-in-out infinite;
+}
+@keyframes pulse-icon {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: .7; }
+}
+
+/* cert card — no extra badge */
+.cert-item { position: relative; }
+
+/* ── LEARNING CENTER — Certification Coming Soon fix ───────── */
+
+/* Remove old base banner */
+.coming-soon-base { display: none !important; }
+.coming-soon-badge { display: none !important; }
+
+/* All 4 cards same style */
+.lg-item,
+.cert-coming {
+  background: var(--surface, #faf9f6);
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Certification card — slightly different to signal it's special */
+.cert-coming {
+  padding: 0;
+  overflow: hidden;
+  border: 1.5px solid var(--gold, #B7860B);
+}
+
+.cert-top {
+  padding: 20px 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* "Coming Soon" strip — inside the cert card at the bottom */
+.cert-soon-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--gold, #B7860B);
+  color: #fff;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 9px 16px;
+  border-radius: 0;
+}
+
+.cert-soon-strip i {
+  animation: pulse-hourglass 1.8s ease-in-out infinite;
+}
+@keyframes pulse-hourglass {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .6; transform: scale(1.15); }
+}
+
+/* Enroll Now button — common, below all 4 cards */
+.learn-grid + .btn-gold,
+.learn-grid ~ .btn-gold {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   PATCH 3 — Home hero height matches page-banner + font fix
+   ============================================================ */
+
+/* ── HOME HERO: match .page-banner ratio on all screen sizes ── */
+/* Remove conflicting earlier rules by overriding with higher specificity */
+#page-home .hero,
+.hero {
+  height: clamp(260px, 55vw, 100vh);  /* same feel as page-banner on mobile */
+  min-height: 260px;
+  max-height: 100vh;
+}
+
+/* Desktop — keep it full/tall */
+@media (min-width: 1025px) {
+  #page-home .hero,
+  .hero {
+    height: 100vh;
+    max-height: 100vh;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+  #page-home .hero,
+  .hero {
+    height: clamp(320px, 50vw, 70vh);
+  }
+}
+
+/* Mobile — exactly match page-banner height */
+@media (max-width: 768px) {
+  #page-home .hero,
+  .hero {
+    height: clamp(260px, 45vw, 380px);  /* matches page-banner clamp(260px,40vw,480px) */
+    min-height: 260px;
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  #page-home .hero,
+  .hero {
+    height: clamp(220px, 50vw, 300px);
+    min-height: 220px;
+    max-height: 300px;
+  }
+}
+
+/* ── HERO CONTENT: device-responsive font sizes ────────────── */
+/* Desktop */
+.hero-h1 {
+  font-family: var(--fd);
+  font-size: clamp(2rem, 5vw, 5.5rem);
+  line-height: 1.08;
+  margin-bottom: 14px;
+}
+
+.hero-eyebrow {
+  font-size: clamp(.65rem, 1.5vw, .85rem);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.hero-sub {
+  font-size: clamp(.78rem, 1.8vw, 1.1rem);
+  color: rgba(255,255,255,.82);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero-h1 { font-size: clamp(1.8rem, 4.5vw, 3.5rem); }
+  .hero-sub { font-size: clamp(.75rem, 1.8vw, 1rem); }
+}
+
+/* Mobile — compact, no overflow */
+@media (max-width: 768px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    text-align: center;
+  }
+  .hero-h1 {
+    font-size: clamp(1.3rem, 5.5vw, 2rem);
+    margin-bottom: 8px;
+    line-height: 1.15;
+  }
+  .hero-eyebrow {
+    font-size: clamp(.58rem, 2.2vw, .72rem);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .hero-sub {
+    font-size: clamp(.7rem, 2.8vw, .88rem);
+    margin-bottom: 16px;
+    max-width: 280px;
+  }
+  .hero-ctas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 220px;
+  }
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-ghost {
+    padding: 9px 16px;
+    font-size: .78rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-h1 { font-size: clamp(1.15rem, 5.5vw, 1.6rem); }
+  .hero-eyebrow { font-size: .6rem; letter-spacing: 1.5px; }
+  .hero-sub { font-size: .68rem; margin-bottom: 12px; }
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-ghost { padding: 8px 14px; font-size: .74rem; }
+}

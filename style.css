@@ -1533,3 +1533,61 @@ select,input,textarea{font-family:var(--fb);}
     max-width: 240px;
   }
 }
+
+/* ============================================================
+   PATCH 5 — Hero buttons: always side-by-side on ALL devices
+   ============================================================ */
+
+/* Override every previous rule — buttons always row, never column */
+.hero-ctas,
+.hero .hero-ctas {
+  display: flex !important;
+  flex-direction: row !important;   /* NEVER stack on mobile */
+  flex-wrap: nowrap !important;     /* stay on one line */
+  gap: 10px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 6px;
+  width: 100%;
+}
+
+.hero-ctas .btn-gold,
+.hero-ctas .btn-ghost,
+.hero-ctas a,
+.hero-ctas a.btn-ghost,
+.hero .hero-ctas > * {
+  flex: 1 1 0 !important;          /* equal width, fill available space */
+  max-width: 180px !important;
+  min-width: 0 !important;
+  padding: 11px 10px !important;
+  font-size: clamp(.62rem, 2.8vw, .84rem) !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  justify-content: center !important;
+  letter-spacing: .3px !important;
+}
+
+/* Slightly larger on tablet+ */
+@media (min-width: 480px) {
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-ghost,
+  .hero-ctas a,
+  .hero-ctas a.btn-ghost {
+    max-width: 210px !important;
+    padding: 12px 20px !important;
+    font-size: .82rem !important;
+  }
+}
+
+/* Desktop: original spacious sizing */
+@media (min-width: 1025px) {
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-ghost,
+  .hero-ctas a,
+  .hero-ctas a.btn-ghost {
+    max-width: 240px !important;
+    padding: 13px 28px !important;
+    font-size: .88rem !important;
+    flex: 0 0 auto !important;
+  }
+}

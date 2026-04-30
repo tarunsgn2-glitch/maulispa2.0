@@ -1361,3 +1361,175 @@ select,input,textarea{font-family:var(--fb);}
   .hero-ctas .btn-gold,
   .hero-ctas .btn-ghost { padding: 8px 14px; font-size: .74rem; }
 }
+
+/* ============================================================
+   PATCH 4 — Header layout + Hero content positioning fixes
+   ============================================================ */
+
+/* ── 1. HEADER: logo left, nav center, lang+hamburger RIGHT ── */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* logo | nav | right */
+  gap: 12px;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.logo-wrap {
+  flex: 0 0 auto;
+  margin-right: auto;               /* pushes nav + right to their places */
+}
+
+.main-nav {
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* header-right always sticks to far right */
+.header-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;               /* ensures it goes to the right edge */
+}
+
+/* Mobile: hide nav, keep lang + hamburger RIGHT */
+@media (max-width: 768px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .logo-wrap {
+    flex: 1;                        /* takes remaining space after right group */
+    margin-right: 0;
+  }
+
+  .main-nav { display: none; }
+  .main-nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: var(--hh);
+    left: 0; right: 0;
+    background: rgba(13,26,3,.98);
+    padding: 20px;
+    gap: 4px;
+    z-index: 999;
+  }
+
+  .header-right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 0;
+  }
+
+  .hamburger { display: flex; }
+}
+
+/* ── 2. HERO: never go under fixed header ─────────────────── */
+/* The hero is inside #app which already has padding-top:var(--hh).
+   But the .hero itself is position:relative inside that, so content
+   needs extra top padding to not be clipped by header overlap */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 0;           /* reset — padding handled by #app */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  max-width: 820px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+}
+
+/* On mobile make sure hero content doesn't hide under header */
+@media (max-width: 768px) {
+  .hero {
+    /* Add extra top offset equal to header height so content starts below header */
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ── 3. HERO EYEBROW: always visible ─────────────────────── */
+.hero-eyebrow {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  font-size: clamp(.6rem, 2.2vw, .82rem);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold, #B7860B);
+  margin-bottom: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .hero-eyebrow {
+    font-size: .6rem;
+    letter-spacing: 2px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* ── 4. HERO BUTTONS: side-by-side on all screen sizes ──────  */
+.hero-ctas {
+  display: flex;
+  flex-direction: row;           /* side by side */
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.hero-ctas .btn-gold,
+.hero-ctas .btn-ghost,
+.hero-ctas a.btn-ghost {
+  width: auto;
+  min-width: 140px;
+  max-width: 200px;
+  padding: 11px 20px;
+  font-size: clamp(.72rem, 2vw, .9rem);
+  text-align: center;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 360px) {
+  .hero-ctas {
+    flex-direction: column;      /* stack only on very small phones */
+    width: 100%;
+  }
+  .hero-ctas .btn-gold,
+  .hero-ctas .btn-ghost,
+  .hero-ctas a.btn-ghost {
+    width: 100%;
+    max-width: 240px;
+  }
+}

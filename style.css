@@ -1940,3 +1940,96 @@ select,input,textarea{font-family:var(--fb);}
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ============================================================
+   CRITICAL FIX — Mobile nav, hamburger, all devices
+   ============================================================ */
+
+/* Mobile nav: hidden by default, shown when .mobile-open */
+@media (max-width: 1100px) {
+  .main-nav {
+    display: none !important;
+  }
+  .main-nav.mobile-open {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    top: var(--hh) !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: rgba(13,26,3,.99) !important;
+    padding: 16px 20px !important;
+    gap: 4px !important;
+    z-index: 998 !important;
+    border-bottom: 1px solid rgba(200,169,110,.2) !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,.5) !important;
+    max-height: calc(100vh - var(--hh)) !important;
+    overflow-y: auto !important;
+  }
+  .main-nav.mobile-open .nl {
+    padding: 13px 16px !important;
+    border-radius: 10px !important;
+    font-size: .9rem !important;
+    display: block !important;
+  }
+  .hamburger {
+    display: flex !important;
+    cursor: pointer !important;
+    padding: 8px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* Header right - always right aligned */
+@media (max-width: 1100px) {
+  .header-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 14px !important;
+  }
+  .logo-wrap {
+    flex: 1 !important;
+    min-width: 0 !important;
+  }
+  .header-right {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-left: auto !important;
+  }
+  .lang-trigger {
+    padding: 5px 10px !important;
+    font-size: .76rem !important;
+  }
+}
+
+/* Ensure pages work correctly */
+.page { display: none !important; }
+.page.active { display: block !important; }
+
+/* Footer mobile spacing */
+@media (max-width: 768px) {
+  .footer .container,
+  .footer-grid {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .footer-bottom .container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+  .fc-contact p,
+  .footer-bio {
+    word-break: break-word !important;
+  }
+}
+
+/* Language menu z-index fix */
+.lang-menu {
+  z-index: 1100 !important;
+}
+.lang-menu.open {
+  display: block !important;
+}

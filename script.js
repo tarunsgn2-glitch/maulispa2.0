@@ -262,9 +262,9 @@ const THERAPIES=[
 ];
 
 const GALLERY_IMGS=[
-  {src:"assets/gallary/main gate (1).webpc?w=600&h=800&fit=crop",alt:"Spa Room"},
-  {src:"https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=420&fit=crop",alt:"Massage Room"},
-  {src:"https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=720&fit=crop",alt:"Relaxation"},
+  {src:"assets/gallery/maingate.webp",alt:"Spa Room"},
+  {src:"assets/gallery/maingate1.webp",alt:"Massage Room"},
+  {src:"assets/gallery/mirror.webp",alt:"Relaxation"},
   {src:"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=500&fit=crop",alt:"Wellness"},
   {src:"https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=600&h=900&fit=crop",alt:"Therapy Room"},
   {src:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=420&fit=crop",alt:"Treatment"},

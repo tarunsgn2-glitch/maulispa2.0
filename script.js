@@ -262,7 +262,7 @@ const THERAPIES=[
 ];
 
 const GALLERY_IMGS=[
-  {src:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=800&fit=crop",alt:"Spa Room"},
+  {src:"assets/gallary/main gate (1).webpc?w=600&h=800&fit=crop",alt:"Spa Room"},
   {src:"https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=420&fit=crop",alt:"Massage Room"},
   {src:"https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=720&fit=crop",alt:"Relaxation"},
   {src:"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=500&fit=crop",alt:"Wellness"},

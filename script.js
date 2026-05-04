@@ -274,18 +274,18 @@ const GALLERY_IMGS=[
   {src:"assets/gallery/counter4.webp",alt:"Steam"},
   {src:"assets/gallery/passageway.webp",alt:"Foot Spa"},
   {src:"assets/gallery/passageway1.webp",alt:"Facial"},
-  {src:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=520&fit=crop",alt:"Ambience"},
-  {src:"https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=700&fit=crop",alt:"Interior"},
-  {src:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=420&fit=crop",alt:"Candles"},
-  {src:"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=620&fit=crop",alt:"Experience"},
-  {src:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=480&fit=crop",alt:"Ayurvedic Oils"},
-  {src:"https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=700&fit=crop",alt:"Spa Therapy"},
-  {src:"https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&h=420&fit=crop",alt:"Massage Therapy"},
-  {src:"https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=580&fit=crop",alt:"Wellness Room"},
-  {src:"https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=600&h=800&fit=crop",alt:"Spa Experience"},
-  {src:"https://images.unsplash.com/photo-1525904097878-94fb15835963?w=600&h=420&fit=crop",alt:"Hot Stone"},
-  {src:"https://images.unsplash.com/photo-1591343395082-e120087004b4?w=600&h=650&fit=crop",alt:"Herbal Treatment"},
-  {src:"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600&h=460&fit=crop",alt:"Relaxation Therapy"}
+  {src:"assets/gallery/almira.webp",alt:"Ambience"},
+  {src:"assets/gallery/oilstroage.webp",alt:"Interior"},
+  {src:"assets/gallery/passage.webp",alt:"Candles"},
+  {src:"assets/gallery/passage1.webp",alt:"Experience"},
+  {src:"assets/gallery/passage2.webp",alt:"Ayurvedic Oils"},
+  {src:"assets/gallery/privatecabin.webp",alt:"Spa Therapy"},
+  {src:"assets/gallery/privatecabin1.webp",alt:"Massage Therapy"},
+  {src:"assets/gallery/privatecabin2.webp",alt:"Wellness Room"},
+  {src:"assets/gallery/washroom.webp",alt:"Spa Experience"},
+  {src:"assets/gallery/washroom1.webp",alt:"Hot Stone"},
+  {src:"assets/gallery/washroom2.webp",alt:"Herbal Treatment"},
+  {src:"assets/gallery/washroom3.webp",alt:"Relaxation Therapy"}
 ];
 
 const BENEFITS={

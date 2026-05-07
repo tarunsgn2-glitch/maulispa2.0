@@ -348,7 +348,7 @@ const TERMS_CONTENT=`
 
 <h2>10. Gift Vouchers &amp; Membership</h2>
 <ul>
-  <li>Gift Vouchers and Membership plans are <strong>non-transferable and non-refundable</strong> once purchased, except as permitted under Point 3 (Booking &amp; Cancellation Policy).</li>
+  <li>Gift Vouchers and Membership plans are <strong>non-transferable and pro rata refundable</strong> once purchased, except as permitted under Point 3 (Booking &amp; Cancellation Policy).</li>
   <li>Unused sessions under memberships are carry-forward eligible as per plan terms.</li>
 </ul>
 

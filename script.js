@@ -321,6 +321,7 @@ const TERMS_CONTENT=`
   <li>Advance booking is recommended for a guaranteed slot. Walk-in is subject to availability.</li>
   <li>If there's a Refund applicable, the cancellations must be made <strong>12–24 hours in advance for it to be valid</strong>.</li>
   <li><strong>No-Show or last-minute cancellation</strong> may result in forfeiture of the booking fee/deposit. No refund will be issued in such cases.</li>
+  <li><strong>Pro-rata refund </strong> will be calculated by deducting the cost of used sessions from the total card value. Additionally 10% service charge will be apply for service less than 3 months for silver, gold, platinum memberships. The Remaining amount will then be refunded</li>
 </ul>
 
 <h2>4. Health Disclaimer</h2>

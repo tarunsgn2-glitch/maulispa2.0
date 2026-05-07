@@ -321,7 +321,7 @@ const TERMS_CONTENT=`
   <li>Advance booking is recommended for a guaranteed slot. Walk-in is subject to availability.</li>
   <li>If there's a Refund applicable, the cancellations must be made <strong>12–24 hours in advance for it to be valid</strong>.</li>
   <li><strong>No-Show or last-minute cancellation</strong> may result in forfeiture of the booking fee/deposit. No refund will be issued in such cases.</li>
-  <li><strong>Pro-rata refund </strong> will be calculated by deducting the cost of used sessions from the total card value. Additionally 10% service charge will be apply for service less than 3 months for silver, gold, platinum memberships. The Remaining amount will then be refunded</li>
+  <li><strong>Pro-rata refund </strong> will be calculated by deducting the cost of used sessions from the total card value. Additionally 10% service charge will be apply for service less than 3 months for silver, gold, platinum memberships. The Remaining amount will then be refunded.</li>
 </ul>
 
 <h2>4. Health Disclaimer</h2>
@@ -330,6 +330,7 @@ const TERMS_CONTENT=`
 
 <h2>5. Customer Conduct</h2>
 <p><strong>Indecent behaviour, sexually inappropriate advances, or rude conduct will result in immediate service termination. No refunds will be provided under any circumstances in such cases.</strong> Management reserves the right to refuse service and report incidents to law enforcement if required.</p>
+<li><strong>Client Confirmation</strong>By booking, the client confirms they are not under the influence of alcohol or illegal drugs. If they found conduct will result in immediate service termination. No refunds will be provided under any circumstances in such cases. </li>
 
 <h2>6. Health &amp; Safety</h2>
 <ul>
@@ -340,6 +341,7 @@ const TERMS_CONTENT=`
 
 <h2>7. Mandatory ID Proof</h2>
 <p><strong>A valid Government-issued ID proof (Aadhaar Card, PAN Card, Voter ID, Passport, or Driving Licence) is mandatory for every booking and walk-in visit.</strong> Entry may be refused without valid ID.</p>
+<li><strong>NOTE</strong>IDs will be verified physically at the center and not stored digitally on the website servers</li>
 
 <h2>8. Privacy Policy</h2>
 <p>Customer data (name, phone number, ID details) will be kept secure and will <strong>only be shared with government regulators (Police/Authorities) if required by law</strong>. We do not sell or share your personal data with third parties for commercial purposes.</p>

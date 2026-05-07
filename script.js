@@ -319,7 +319,7 @@ const TERMS_CONTENT=`
 <h2>3. Booking &amp; Cancellation Policy</h2>
 <ul>
   <li>Advance booking is recommended for a guaranteed slot. Walk-in is subject to availability.</li>
-  <li>Refund (if any) is applicable on cancellations made <strong>48–72 hours in advance</strong>.</li>
+  <li>If there's a Refund applicable, the cancellations must be made <strong>12–24 hours in advance for it to be valid</strong>.</li>
   <li><strong>No-Show or last-minute cancellation</strong> may result in forfeiture of the booking fee/deposit. No refund will be issued in such cases.</li>
 </ul>
 

@@ -60,7 +60,6 @@
       <a href="javascript:void(0)" class="nl" data-page="about" onclick="navTo('about');setNavActive(this)" data-i18n="navAbout">About</a>
       <a href="javascript:void(0)" class="nl" data-page="contact" onclick="navTo('contact');setNavActive(this)" data-i18n="navContact">Contact</a>
       <a href="javascript:void(0)" class="nl" data-page="more" onclick="navTo('more');setNavActive(this)" data-i18n="navMore">More</a>
-
     </nav>
 
     <div class="header-right">
@@ -100,7 +99,6 @@
   <!-- HERO -->
   <div class="hero">
     <div class="hero-video-wrap" id="heroVideoWrap">
-      <!-- 6 hero videos — Full HD auto-fit, rotate every 6s via JS -->
       <video class="hero-video active" autoplay muted loop playsinline preload="auto">
         <source src="assets/home/hero/hero.mp4" type="video/mp4">
       </video>
@@ -143,7 +141,6 @@
       <h2 class="sec-h2" data-i18n="top3Title">Our Most Loved Services</h2>
       <div class="top3-grid">
 
-        <!-- CARD 1: Deep Tissue — stroke video plays on hover of ANY card -->
         <div class="top3-card top3-card-hover" data-img="assets/therapies/deeptissue2.webp?w=700&h=500&fit=crop">
           <video class="top3-stroke-video" muted loop playsinline preload="none">
             <source src="assets/therapies/deeptissue.mp4" type="video/mp4">
@@ -162,7 +159,6 @@
           </div>
         </div>
 
-        <!-- CARD 2: Til Tel — stroke video plays on hover of ANY card -->
         <div class="top3-card top3-card-hover" data-img="assets/therapies/tiltel2.webp?w=700&h=500&fit=crop">
           <video class="top3-stroke-video" muted loop playsinline preload="none">
             <source src="assets/therapies/tiltel.mp4" type="video/mp4">
@@ -181,7 +177,6 @@
           </div>
         </div>
 
-        <!-- CARD 3: Back Pain — stroke video plays on hover of ANY card -->
         <div class="top3-card top3-card-hover" data-img="assets/therapies/backpain.webp?w=700&h=500&fit=crop">
           <video class="top3-stroke-video" muted loop playsinline preload="none">
             <source src="assets/therapies/backpain.mp4" type="video/mp4">
@@ -256,7 +251,7 @@
     </div>
   </div>
 
-  <!-- GOOGLE REVIEWS -->
+  <!-- GOOGLE REVIEWS — Actual elfsite embed -->
   <div class="reviews-section">
     <div class="container">
       <div class="sec-badge">Google Reviews</div>
@@ -267,12 +262,18 @@
         <span>4.9 / 5 &nbsp;·&nbsp; 200+ Reviews</span>
         <a href="https://522c676329b441b885ee4ed697cd2da2.elf.site" target="_blank" rel="noopener" class="btn-gold btn-sm" data-i18n="seeReviews">See All Reviews</a>
       </div>
-      <div class="reviews-slider" id="reviewsSlider">
-        <div class="review-card"><div class="rc-stars">★★★★★</div><p>"Deep Tissue Massage ke baad meri back pain bilkul theek ho gayi. Staff bahut professional hai!"</p><div class="rc-author"><div class="rc-av">R</div><div><b>Rahul Sharma</b><small>Kothrud, Pune</small></div></div></div>
-        <div class="review-card"><div class="rc-stars">★★★★★</div><p>"Oils pure hain, ambience shant hai. Gold membership lene ke baad se regular aa rahi hoon."</p><div class="rc-author"><div class="rc-av">P</div><div><b>Priya Kulkarni</b><small>Karve Road</small></div></div></div>
-        <div class="review-card"><div class="rc-stars">★★★★★</div><p>"Best ayurvedic center in Pune. Potli massage ne joint pain mein bahut rahat di. Highly recommended!"</p><div class="rc-author"><div class="rc-av">A</div><div><b>Amit Desai</b><small>Pune</small></div></div></div>
-        <div class="review-card"><div class="rc-stars">★★★★★</div><p>"IT sector mein bahut stress tha. Mauli Spa ne sach mein sukoon diya. Ab har 2 hafte aata hoon!"</p><div class="rc-author"><div class="rc-av">S</div><div><b>Suresh Nair</b><small>Hinjawadi</small></div></div></div>
-        <div class="review-card"><div class="rc-stars">★★★★★</div><p>"Anniversary ke liye Couple Massage ek amazing gift tha! Ekdum romantic aur relaxing experience."</p><div class="rc-author"><div class="rc-av">M</div><div><b>Meera & Rohan</b><small>Deccan, Pune</small></div></div></div>
+      <!-- Elfsite Google Reviews Widget -->
+      <div class="elfsite-reviews-wrap">
+        <iframe
+          src="https://522c676329b441b885ee4ed697cd2da2.elf.site"
+          width="100%"
+          height="600"
+          frameborder="0"
+          style="border:none;border-radius:14px;overflow:hidden;"
+          loading="lazy"
+          title="Mauli Spa Google Reviews"
+          allow="clipboard-write"
+        ></iframe>
       </div>
     </div>
   </div>
@@ -303,7 +304,6 @@
   <div class="container" style="padding:60px 20px">
     <div class="sec-badge" data-i18n="therapiesBadge">All Services</div>
     <h2 class="sec-h2" data-i18n="therapiesTitle">Hamari Wellness Therapies</h2>
-
     <div class="therapies-grid" id="therapiesGrid"></div>
   </div>
   <div class="hygiene-strip">
@@ -325,7 +325,6 @@
     <div class="pb-content"><h1 data-i18n="galleryH1">Gallery</h1><p data-i18n="gallerySub">Hamare Shant aur Sundar Vatavaran Dekhein</p></div>
   </div>
   <div class="container" style="padding:60px 20px">
-    <!-- Social Strip -->
     <div class="social-section-header" data-i18n="followUs">Follow Us On Social Media</div>
     <div class="social-strip">
       <a href="https://instagram.com/maulispa" target="_blank" class="soc-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
@@ -334,7 +333,6 @@
       <a href="https://wa.me/919307360513" target="_blank" class="soc-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       <a href="https://share.google/SUFFG6sbTxTEp1xLA" target="_blank" class="soc-btn gmaps"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
     </div>
-    <!-- Virtual Tour -->
     <div class="virtual-tour-wrap">
       <h3 class="sec-h2" data-i18n="virtualTour">Virtual Tour</h3>
       <div class="vt-video">
@@ -344,11 +342,9 @@
         <div class="vt-label"><i class="fas fa-play-circle"></i> <span data-i18n="virtualTourLabel">Mauli Spa — Virtual Tour</span></div>
       </div>
     </div>
-    <!-- Masonry Gallery -->
     <h3 class="sec-h2" style="margin-bottom:30px;" data-i18n="photoGallery">Photo Gallery</h3>
     <div class="masonry-grid" id="masonryGrid"></div>
   </div>
-  <!-- Lightbox -->
   <div class="lightbox" id="lightbox">
     <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
     <button class="lb-prev" onclick="lbNav(-1)"><i class="fas fa-chevron-left"></i></button>
@@ -371,7 +367,6 @@
       <span class="pulse-dot"></span>
       <strong data-i18n="limitedOffer">LIMITED OFFER:</strong>&nbsp;<span data-i18n="limitedOfferDesc">Pehle 50 Members ke liye Join karte hi ek FREE Facial milega!</span>
     </div>
-    <!-- Savings Calculator -->
     <div class="savings-calc">
       <h3 data-i18n="savingsCalc">Savings Calculator</h3>
       <div class="sc-inner">
@@ -381,7 +376,6 @@
         <div class="sc-box highlight"><span data-i18n="annualSaving">Annual Saving</span><strong>₹4,500/session</strong></div>
       </div>
     </div>
-    <!-- Plans -->
     <div class="plans-grid">
       <div class="plan-card">
         <div class="plan-header"><h3 data-i18n="planSilver">Silver</h3><div class="plan-price">₹2,199<span>/mo</span></div></div>
@@ -418,7 +412,6 @@
         <button class="btn-outline" onclick="navTo('contact')" data-i18n="joinPlatinum">Join Platinum</button>
       </div>
     </div>
-    <!-- Member Testimonials -->
     <div style="margin-top:60px">
       <h3 class="sec-h2" data-i18n="memberTestTitle">Happy Members</h3>
       <div class="mem-test-grid">
@@ -426,7 +419,6 @@
         <div class="mem-test-card"><p>"Gold membership best value for money hai. Guest pass se maine apni wife ko bhi treat kiya!"</p><strong>— Vikram Joshi, Gold Member</strong></div>
       </div>
     </div>
-    <!-- FAQs -->
     <div class="faqs-wrap" style="margin-top:60px">
       <h3 class="sec-h2" data-i18n="faqTitle">Frequently Asked Questions</h3>
       <div class="faq-list">
@@ -465,19 +457,17 @@
         <img src="assets/about/sumansolanki.webp" alt="Mauli Spa">
       </div>
     </div>
-    <!-- Vision -->
     <div class="vision-row">
       <div class="vision-card"><div class="vc-icon"><i class="fas fa-eye"></i></div><h3 data-i18n="ourVision">Our Vision</h3><p data-i18n="visionDesc">Stress-free lifestyle promote karna aur har ek client ko sampoorna swasthya ki taraf guide karna.</p></div>
       <div class="vision-card"><div class="vc-icon"><i class="fas fa-heart"></i></div><h3 data-i18n="ourMission">Our Mission</h3><p data-i18n="missionDesc">Prachin Ayurvedic wisdom ko modern comfort ke saath combine karke best healing experience dena.</p></div>
       <div class="vision-card"><div class="vc-icon"><i class="fas fa-seedling"></i></div><h3 data-i18n="ourValues">Our Values</h3><p data-i18n="valuesDesc">Authenticity, purity, care aur continuous improvement — ye hamare core values hain.</p></div>
     </div>
-    <!-- Team -->
     <h3 class="sec-h2" style="margin-bottom:30px" data-i18n="ourTeam">Our Team</h3>
     <div class="team-grid">
-      <div class="team-card"><div class="team-img" style="background-image:url('assets/about/sumansolanki.webp?w=300&h=300&fit=crop')"></div><h4>Mrs. Suman Solanki</h4><p>Founder & Head Therapist</p><small>15+ Years Experience</small></div>
+      <div class="team-card"><div class="team-img" style="background-image:url('assets/about/sumansolanki.webp?w=300&h=300&fit=crop')"></div><h4>Mrs. Suman Solanki</h4><p>Founder &amp; Head Therapist</p><small>15+ Years Experience</small></div>
       <div class="team-card"><div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?w=300&h=300&fit=crop')"></div><h4>Priya Sharma</h4><p>Senior Ayurvedic Therapist</p><small>8+ Years Experience</small></div>
       <div class="team-card"><div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?w=300&h=300&fit=crop')"></div><h4>Ravi Kumar</h4><p>Deep Tissue Specialist</p><small>6+ Years Experience</small></div>
-      <div class="team-card"><div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop')"></div><h4>Anita Patil</h4><p>Potli & Herbal Expert</p><small>7+ Years Experience</small></div>
+      <div class="team-card"><div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop')"></div><h4>Anita Patil</h4><p>Potli &amp; Herbal Expert</p><small>7+ Years Experience</small></div>
       <div class="team-card special-card"><div class="team-img" style="background-image:url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop')"></div><h4>Tarun Kumar</h4><p>Marketing Expert</p><small>Last 5 Years · Lead Knight</small><a href="https://instagram.com/lead.knight" target="_blank" class="btn-gold btn-sm" style="margin-top:10px;display:inline-flex;align-items:center;gap:6px;"><i class="fab fa-instagram"></i> Connect</a></div>
     </div>
   </div>
@@ -499,6 +489,18 @@
         <div id="contactFormWrap">
           <div class="form-group"><label data-i18n="fName">Your Name *</label><input type="text" id="fName" placeholder="Aapka naam" autocomplete="name"></div>
           <div class="form-group"><label data-i18n="fPhone">Mobile Number *</label><input type="tel" id="fPhone" placeholder="+91 XXXXX XXXXX" autocomplete="tel"></div>
+          <!-- ID Proof field — mandatory -->
+          <div class="form-group">
+            <label data-i18n="fIdProof">Government ID Type *</label>
+            <select id="fIdProof">
+              <option value="">-- Select ID Proof --</option>
+              <option>Aadhaar Card</option>
+              <option>PAN Card</option>
+              <option>Voter ID</option>
+              <option>Passport</option>
+              <option>Driving Licence</option>
+            </select>
+          </div>
           <div class="form-group"><label data-i18n="fService">Service Interested In</label>
             <select id="fService">
               <option value="">Select a therapy...</option>
@@ -512,12 +514,20 @@
             </div>
           </div>
           <div class="form-group"><label data-i18n="fMsg">Message</label><textarea id="fMsg" rows="3" placeholder="Koi special requirement?"></textarea></div>
+          <!-- T&C Checkbox -->
+          <div class="form-group tc-checkbox-wrap">
+            <label class="tc-checkbox-label">
+              <input type="checkbox" id="fTcAccept">
+              <span data-i18n="tcAcceptLabel">I have read and agree to the</span>
+              <a href="javascript:void(0)" onclick="openLegalPopup('terms')" class="tc-link" data-i18n="tcLinkText">Terms &amp; Conditions</a>
+            </label>
+            <div id="tcError" class="ferr" style="display:none" data-i18n="tcError">Please accept the Terms &amp; Conditions to proceed.</div>
+          </div>
           <button class="btn-gold btn-full" onclick="submitContactForm()" data-i18n="submitBtn">Start Your Wellness Journey 🌿</button>
         </div>
         <div id="formSuccess" class="form-success" style="display:none">
           <i class="fas fa-check-circle"></i><h3>Thank You!</h3><p data-i18n="formSuccessMsg">Aapka message mil gaya. Hum 15 minutes mein call karenge!</p>
         </div>
-        <!-- FAQs -->
         <div class="contact-faqs">
           <h4 data-i18n="quickFaqs">Quick FAQs</h4>
           <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text" data-i18n="cfaq1q">Kya pre-booking zaroori hai?</span> <span>+</span></button><div class="faq-a" data-i18n="cfaq1a">Walk-in available hai, lekin advance booking recommended hai for guaranteed slot.</div></div>
@@ -616,7 +626,7 @@
           </div>
           <div class="lg-item">
             <i class="fas fa-flask"></i>
-            <h5 data-i18n="l3h">Oil & Herb Knowledge</h5>
+            <h5 data-i18n="l3h">Oil &amp; Herb Knowledge</h5>
             <p data-i18n="l3p">Pure Ayurvedic oils aur herbs</p>
           </div>
           <div class="lg-item lg-cert-card">
@@ -634,7 +644,6 @@
         <button class="btn-gold" onclick="openLearnModal()" data-i18n="learnEnroll">Enroll Now</button>
       </div>
     </div>
-    <!-- Quick Links -->
     <div class="more-quick-grid">
       <div class="mq-card" onclick="navTo('therapies')"><i class="fas fa-spa"></i><h4 data-i18n="qTherapies">All Therapies</h4></div>
       <div class="mq-card" onclick="navTo('membership')"><i class="fas fa-crown"></i><h4 data-i18n="qMembership">Membership</h4></div>
@@ -688,6 +697,11 @@
         <div><strong>Mauli Spa</strong><small>Mauli Ayurvedic Massage Therapy</small></div>
       </div>
       <p class="footer-bio" data-i18n="footerBio">Pune ka premier Ayurvedic wellness center. Prachin wisdom aur modern comfort ka sangam.</p>
+      <!-- NIC & UDYAM codes -->
+      <div class="footer-reg-codes">
+        <span><i class="fas fa-registered"></i> NIC Code: 86901</span>
+        <span><i class="fas fa-industry"></i> UDYAM-MH-26-0887153</span>
+      </div>
       <div class="footer-socials">
         <a href="https://instagram.com/maulispa" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://facebook.com/@maulispa" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
@@ -818,7 +832,7 @@
     <div class="form-group"><label>Your Name</label><input type="text" id="learnName" placeholder="Your name"></div>
     <div class="form-group"><label>Phone</label><input type="tel" id="learnPhone" placeholder="+91 XXXXX XXXXX"></div>
     <div class="form-group"><label>Choose Course</label>
-      <select id="learnCourse"><option>Ayurveda Basics</option><option>Massage Techniques</option><option>Oil & Herb Knowledge</option><option>Certification Course</option></select>
+      <select id="learnCourse"><option>Ayurveda Basics</option><option>Massage Techniques</option><option>Oil &amp; Herb Knowledge</option><option>Certification Course</option></select>
     </div>
     <button class="btn-gold btn-full" onclick="submitLearn()">Enroll Now</button>
   </div>

@@ -318,7 +318,7 @@ const TERMS_CONTENT=`
 <p>Technical management and website updates are exclusively handled by Leadknight. Unauthorized access or 3rd party modifications to the website's source code are strictly prohibited and may void the maintenance support.</p>
 <p><p>Is website par maujood saara content (text, images, logos, videos aur layout) Mauli Ayurvedic Massage Therapy ki property hai. Bina written permission ke iska upyog karna Indian Copyright Act ke tehat gair-kanooni hai.</p> </p>
 <h2>2. Services</h2>
-<p>All Ayurvedic massage services are performed by trained and certified therapists. Prices are subject to change without prior notice. All services are for therapeutic and wellness purposes only.</p>
+<p>All content present on this website (text, images, logos, videos, and layout) is the property of Mauli Ayurvedic Massage Therapy. Using it without written permission is illegal under the Indian Copyright Act 1957.</p>
 
 <h2>3. Booking &amp; Cancellation Policy</h2>
 <ul>

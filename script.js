@@ -311,9 +311,12 @@ const BENEFITS={
 /* ── TERMS CONTENT — Updated with all new clauses ─────────── */
 const TERMS_CONTENT=`
 <h2>1. Acceptance of Terms</h2>
-<p>Mauli Spa is a brand name under Mauli Ayurvedic Massage Therapy, providing authentic Ayurvedic wellness services.</p>
+<p><strong>Mauli Spa</strong> is a brand name under Mauli Ayurvedic Massage Therapy, providing authentic Ayurvedic wellness services.</p>
 <p>By using Mauli Ayurvedic Massage Therapy / Mauli Spa's services, you agree to these Terms and Conditions. These apply to all clients visiting Shop No 112, First Floor, The Business Hub, Karve Road, Kothrud, Pune 411038, or booking online.</p>
 
+<h2>2.Maintenance & Management </h2>
+<p>Technical management and website updates are exclusively handled by Leadknight. Unauthorized access or 3rd party modifications to the website's source code are strictly prohibited and may void the maintenance support.</p>
+<p><p>Is website par maujood saara content (text, images, logos, videos aur layout) Mauli Ayurvedic Massage Therapy ki property hai. Bina written permission ke iska upyog karna Indian Copyright Act ke tehat gair-kanooni hai.</p> </p>
 <h2>2. Services</h2>
 <p>All Ayurvedic massage services are performed by trained and certified therapists. Prices are subject to change without prior notice. All services are for therapeutic and wellness purposes only.</p>
 
@@ -401,7 +404,7 @@ const PRIVACY_CONTENT=`
 </ul>
 
 <h2>8. Children's Privacy</h2>
-<p>Our services are not directed at individuals under 18 without parental/guardian consent. Minors must be accompanied by an adult.</p>
+<p>Our services are not directed at individuals under 18 without parental/guardian in written consent. Minors must be accompanied by an adult.</p>
 
 <h2>9. Contact Us</h2>
 <p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>

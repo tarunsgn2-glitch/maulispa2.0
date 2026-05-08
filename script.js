@@ -311,6 +311,7 @@ const BENEFITS={
 /* ── TERMS CONTENT — Updated with all new clauses ─────────── */
 const TERMS_CONTENT=`
 <h2>1. Acceptance of Terms</h2>
+<p>Mauli Spa is a brand name under Mauli Ayurvedic Massage Therapy, providing authentic Ayurvedic wellness services.</p>
 <p>By using Mauli Ayurvedic Massage Therapy / Mauli Spa's services, you agree to these Terms and Conditions. These apply to all clients visiting Shop No 112, First Floor, The Business Hub, Karve Road, Kothrud, Pune 411038, or booking online.</p>
 
 <h2>2. Services</h2>
@@ -331,6 +332,7 @@ const TERMS_CONTENT=`
 <h2>5. Customer Conduct</h2>
 <p><strong>Indecent behaviour, sexually inappropriate advances, or rude conduct will result in immediate service termination. No refunds will be provided under any circumstances in such cases.</strong> Management reserves the right to refuse service and report incidents to law enforcement if required.</p>
 <li><strong>Client Confirmation</strong>By booking, the client confirms they are not under the influence of alcohol or illegal drugs. If they found conduct will result in immediate service termination. No refunds will be provided under any circumstances in such cases. </li>
+<h2> Minor Policy</h2> Individuals under the age of 18 (minors) are not permitted to avail of any therapies or services unless accompanied by a parent or legal guardian throughout the session. A valid ID proof of both the minor and the guardian is mandatory.</p>
 
 <h2>6. Health &amp; Safety</h2>
 <ul>

@@ -1,17 +1,294 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Mauli Spa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauli Spa — Redirecting...</title>
+  <meta name="description" content="Mauli Spa - Best Ayurvedic Massage Therapy in Pune | Kothrud">
+
+  <!-- Prevent search engines from indexing this redirect page -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --gold: #C8A96E;
+      --gold2: #E8C98A;
+      --green: #1A2E0A;
+      --green2: #2D4A16;
+      --cream: #F8F4EC;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--green);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    /* Subtle background pattern */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(200,169,110,.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(200,169,110,.06) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      animation: fadeDown .7s ease both;
+    }
+
+    .logo-circle {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 2.5px solid var(--gold);
+      overflow: hidden;
+      box-shadow: 0 0 32px rgba(200,169,110,.25);
+    }
+
+    .logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Fallback if image not loaded yet */
+    .logo-circle-fallback {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 2.5px solid var(--gold);
+      background: linear-gradient(135deg, var(--green2), var(--green));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Upright', Georgia, serif;
+      font-size: 1.6rem;
+      color: var(--gold);
+      box-shadow: 0 0 32px rgba(200,169,110,.25);
+    }
+
+    .logo-name {
+      font-family: 'Cormorant Upright', Georgia, serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      letter-spacing: .5px;
+    }
+
+    .logo-tagline {
+      font-size: .65rem;
+      color: rgba(255,255,255,.4);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* Main message */
+    .message-wrap {
+      text-align: center;
+      animation: fadeUp .8s .2s ease both;
+    }
+
+    .message-wrap h1 {
+      font-family: 'Cormorant Upright', Georgia, serif;
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .message-wrap h1 em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    .message-wrap p {
+      font-size: .88rem;
+      color: rgba(255,255,255,.55);
+      max-width: 340px;
+      line-height: 1.7;
+    }
+
+    /* Spinner */
+    .spinner-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      animation: fadeUp .8s .35s ease both;
+    }
+
+    .spinner {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 3px solid rgba(200,169,110,.2);
+      border-top-color: var(--gold);
+      animation: spin .85s linear infinite;
+    }
+
+    .spinner-label {
+      font-size: .75rem;
+      color: rgba(255,255,255,.4);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    /* Progress bar */
+    .progress-bar-wrap {
+      width: 220px;
+      height: 3px;
+      background: rgba(200,169,110,.15);
+      border-radius: 3px;
+      overflow: hidden;
+      animation: fadeUp .8s .4s ease both;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--gold), var(--gold2));
+      border-radius: 3px;
+      animation: progressFill 2s ease forwards;
+    }
+
+    /* Manual link fallback */
+    .fallback-wrap {
+      text-align: center;
+      animation: fadeUp .8s .5s ease both;
+    }
+
+    .fallback-wrap p {
+      font-size: .78rem;
+      color: rgba(255,255,255,.3);
+      margin-bottom: 10px;
+    }
+
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold), #A07840);
+      color: #0d1a03;
+      font-family: 'Jost', sans-serif;
+      font-weight: 600;
+      font-size: .78rem;
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      letter-spacing: .4px;
+      text-transform: uppercase;
+      transition: all .25s;
+      box-shadow: 0 6px 24px rgba(200,169,110,.25);
+    }
+
+    .home-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(200,169,110,.35);
+    }
+
+    /* Keyframes */
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @keyframes progressFill {
+      0%   { width: 0; }
+      60%  { width: 75%; }
+      100% { width: 100%; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
   <script>
-    var l = window.location;
-    l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1 + 1).join('/') + '/?p=/' +
-      l.pathname.slice(1).split('/').slice(1).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
+    // ── GitHub Pages SPA routing fix ──────────────────────────
+    // Redirects direct URL access back to index.html with hash routing
+    (function() {
+      var l = window.location;
+      var segmentCount = 1; // repo depth: 1 for username.github.io/repo
+
+      var path = l.pathname.slice(1).split('/').slice(segmentCount).join('/');
+      var query = l.search.slice(1).replace(/&/g, '~and~');
+
+      var redirectUrl =
+        l.protocol + '//' + l.hostname +
+        (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, segmentCount + 1).join('/') +
+        '/?p=/' + path.replace(/&/g, '~and~') +
+        (query ? '&q=' + query : '') +
+        l.hash;
+
+      // Small delay so branded loader is visible
+      setTimeout(function() {
+        l.replace(redirectUrl);
+      }, 1800);
+    })();
   </script>
 </head>
-<body>Redirecting...</body>
+
+<body>
+
+  <!-- Logo -->
+  <div class="logo-wrap">
+    <div class="logo-circle">
+      <img
+        src="assets/home/logo/logo.webp"
+        alt="Mauli Spa Logo"
+        onerror="this.parentNode.outerHTML='<div class=\'logo-circle-fallback\'>M</div>'"
+      >
+    </div>
+    <span class="logo-name">Mauli Spa</span>
+    <span class="logo-tagline">Mauli Ayurvedic Massage Therapy</span>
+  </div>
+
+  <!-- Message -->
+  <div class="message-wrap">
+    <h1>Taking you to <em>wellness</em>...</h1>
+    <p>You will be redirected to the Mauli Spa home page in a moment.</p>
+  </div>
+
+  <!-- Spinner + progress -->
+  <div class="spinner-wrap">
+    <div class="spinner"></div>
+    <span class="spinner-label">Redirecting</span>
+  </div>
+
+  <div class="progress-bar-wrap">
+    <div class="progress-bar"></div>
+  </div>
+
+  <!-- Fallback if JS redirect is slow -->
+  <div class="fallback-wrap">
+    <p>Not redirecting? Click below.</p>
+    <a class="home-btn" href="/">
+      &#127807; Go to Mauli Spa Home
+    </a>
+  </div>
+
+</body>
 </html>

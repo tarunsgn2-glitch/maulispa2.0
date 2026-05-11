@@ -1,7 +1,7 @@
 /* ============================================================
-   MAULI SPA V4 — COMPLETE JAVASCRIPT
+   MAULI SPA V4 — COMPLETE JAVASCRIPT (FULLY UPGRADED)
    Base language: English | Multilingual T&C: EN + HI + MR
-   Smart Savings Calculator | Skeleton Loading | Hover Effects
+   Smart Savings Calculator | Skeleton Loading | All Fixes Merged
    ============================================================ */
 
 /* ── TRANSLATIONS ─────────────────────────────────────────── */
@@ -83,7 +83,6 @@ const T = {
     moreH1:"More from Mauli Spa",moreSub:"Explore more options",
     referTitle:"Refer & Earn Discount",
     referDesc:"Refer a friend to Mauli Ayurvedic Massage and both get a discount! Valid on services above ₹1,500.",
-    referHoverText:"Refer a friend & earn discounts together!",
     rs1:"Refer Mauli Spa to your friends",rs2:"After friend's visit, you get a discount",
     rs3:"Friend gets a special discount on first therapy!",
     referYouGet:"You get: 10% off on next service (min ₹1,500)",
@@ -91,13 +90,11 @@ const T = {
     referTerms:"*Terms apply. Valid on services above ₹1,500 only.",
     joinTeamTitle:"Join Us as Team",
     joinTeamDesc:"Become part of Mauli Spa's growing family. Choose your work style!",
-    joinTeamHoverText:"Be part of our growing wellness family!",
     salariedTitle:"Salaried",sal1:"Fixed monthly salary",sal2:"PF & ESI benefits",sal4:"Training provided",
     freelanceTitle:"Freelancer",fr1:"Flexible hours",fr2:"Per-15 Days payment",
     fr3:"Work from our center",fr4:"Upscale your Therapy skill",applyNow:"Apply Now",
     learningTitle:"Learning Center",
     learningDesc:"Learn about Ayurveda and wellness. Courses and workshops available!",
-    learningHoverText:"Learn the art of Ayurvedic healing!",
     l1h:"Ayurveda Basics",l1p:"Introduction to Ayurvedic principles",
     l2h:"Massage Techniques",l2p:"Learn professional massage skills",
     l3h:"Oil & Herb Knowledge",l3p:"Pure Ayurvedic oils and herbs",
@@ -204,18 +201,15 @@ const T = {
     quickFaqs:"त्वरित प्रश्न",findUs:"हमें ढूंढें",getDirections:"दिशा निर्देश →",
     moreH1:"माउली स्पा से और",moreSub:"और विकल्प देखें",
     referTitle:"रेफर करें और छूट पाएं",referDesc:"अपने दोस्त को refer करें और दोनों को discount पाएं!",
-    referHoverText:"दोस्त को refer करें और साथ में discount पाएं!",
     rs1:"अपने दोस्त को Mauli Spa refer करें",rs2:"दोस्त के visit के बाद आपको discount मिलेगा",
     rs3:"और दोस्त को भी first visit पर special discount!",
     referYouGet:"आपको: अगली सेवा पर 10% छूट",referFriendGet:"दोस्त को: पहली visit पर 5% छूट",
     referNow:"अभी refer करें",referTerms:"*नियम लागू। केवल ₹1,500 से ऊपर।",
     joinTeamTitle:"टीम में शामिल हों",joinTeamDesc:"Mauli Spa के बढ़ते परिवार का हिस्सा बनें!",
-    joinTeamHoverText:"हमारे बढ़ते wellness परिवार का हिस्सा बनें!",
     salariedTitle:"वेतनभोगी",sal1:"निश्चित मासिक वेतन",sal2:"PF और ESI लाभ",sal4:"प्रशिक्षण प्रदान",
     freelanceTitle:"फ्रीलांसर",fr1:"लचीले घंटे",fr2:"प्रति-15 दिन भुगतान",
     fr3:"हमारे center से काम करें",fr4:"अपनी Therapy Skills को बेहतर बनाएं",applyNow:"अभी आवेदन करें",
     learningTitle:"लर्निंग सेंटर",learningDesc:"Ayurveda और wellness के बारे में सीखें।",
-    learningHoverText:"आयुर्वेदिक healing की कला सीखें!",
     l1h:"आयुर्वेद मूल बातें",l1p:"आयुर्वेदिक सिद्धांतों का परिचय",
     l2h:"मसाज तकनीक",l2p:"Professional massage skills सीखें",
     l3h:"तेल और जड़ी-बूटी ज्ञान",l3p:"Pure Ayurvedic oils और herbs",
@@ -322,18 +316,15 @@ const T = {
     quickFaqs:"त्वरित प्रश्न",findUs:"आम्हाला शोधा",getDirections:"दिशा मिळवा →",
     moreH1:"माउली स्पाकडून अधिक",moreSub:"अधिक पर्याय पहा",
     referTitle:"रेफर करा आणि सूट मिळवा",referDesc:"मित्राला refer करा आणि दोघांनाही सूट!",
-    referHoverText:"मित्राला refer करा आणि सूट एकत्र मिळवा!",
     rs1:"मित्राला Mauli Spa refer करा",rs2:"मित्राच्या भेटीनंतर सूट मिळेल",
     rs3:"मित्राला पहिल्या भेटीत विशेष सूट!",
     referYouGet:"तुम्हाला: 10% सूट",referFriendGet:"मित्राला: 5% सूट",
     referNow:"आता refer करा",referTerms:"*अटी लागू.",
     joinTeamTitle:"टीममध्ये सहभागी व्हा",joinTeamDesc:"माउली स्पाच्या कुटुंबाचा भाग व्हा!",
-    joinTeamHoverText:"आमच्या वाढत्या wellness कुटुंबाचा भाग व्हा!",
     salariedTitle:"वेतनधारी",sal1:"निश्चित मासिक वेतन",sal2:"PF आणि ESI",sal4:"प्रशिक्षण",
     freelanceTitle:"फ्रीलांसर",fr1:"लवचिक वेळ",fr2:"प्रति-15 दिवस देयक",
     fr3:"केंद्रातून काम",fr4:"Therapy Skills सुधारा",applyNow:"आता अर्ज करा",
     learningTitle:"लर्निंग सेंटर",learningDesc:"आयुर्वेद आणि wellness शिका.",
-    learningHoverText:"आयुर्वेदिक healing ची कला शिका!",
     l1h:"आयुर्वेद मूलतत्त्वे",l1p:"आयुर्वेदिक तत्त्वांचा परिचय",
     l2h:"मसाज तंत्र",l2p:"व्यावसायिक skills शिका",
     l3h:"तेल आणि औषधी ज्ञान",l3p:"शुद्ध आयुर्वेदिक तेले",
@@ -366,21 +357,18 @@ const T = {
   }
 };
 
-/* fallback other languages to English */
 ['ta','te','bn','gu','kn','pa','ml'].forEach(function(lang){
   if(!T[lang]) T[lang]=Object.assign({},T.en);
 });
 
-/* ── TERMS & PRIVACY — English + Hindi + Marathi ──────────── */
+/* ── TERMS & PRIVACY ─────────────────────────────────────── */
 const TERMS_EN = `
 <h2>1. Acceptance of Terms</h2>
 <p><strong>Mauli Spa</strong> is a brand name under Mauli Ayurvedic Massage Therapy, providing authentic Ayurvedic wellness services.</p>
 <p>By using Mauli Spa's services, you agree to these Terms and Conditions. These apply to all clients visiting Shop No 112, First Floor, The Business Hub, Karve Road, Kothrud, Pune 411038, or booking online.</p>
-
 <h2>2. Website & IP Maintenance</h2>
 <p>Technical management and website updates are exclusively handled by <strong>Leadknight</strong>. Unauthorized access or third-party modifications to the website source code are strictly prohibited and may void the maintenance support.</p>
 <p>All content on this website (text, images, logos, videos, layout) is the intellectual property of Mauli Ayurvedic Massage Therapy. Using it without written permission is illegal under the Indian Copyright Act 1957.</p>
-
 <h2>3. Booking &amp; Cancellation Policy</h2>
 <ul>
   <li>Advance booking is recommended for a guaranteed slot. Walk-in is subject to availability.</li>
@@ -388,182 +376,83 @@ const TERMS_EN = `
   <li><strong>No-show or last-minute cancellation</strong> will result in forfeiture of the booking deposit. No refund will be issued.</li>
   <li><strong>Membership pro-rata refund:</strong> Calculated by deducting the cost of used sessions from total card value. A <strong>10% service charge</strong> applies if cancelled within 3 months for Silver, Gold, or Platinum memberships.</li>
 </ul>
-
 <h2>4. Health Disclaimer</h2>
 <p><strong>Mauli Spa services are for therapeutic and wellness purposes only. This is NOT a medical or sexual service.</strong></p>
-<p>Massage therapy is not a substitute for medical treatment. Clients with serious medical conditions (heart disease, cancer, blood clots, pregnancy, recent surgery, etc.) must consult their physician before booking.</p>
-
+<p>Massage therapy is not a substitute for medical treatment. Clients with serious medical conditions must consult their physician before booking.</p>
 <h2>5. Customer Conduct</h2>
-<p><strong>Indecent behaviour, sexually inappropriate advances, or rude conduct will result in immediate service termination. No refund will be provided in such cases.</strong> Management reserves the right to refuse service and report incidents to law enforcement.</p>
-<p>By booking, the client confirms they are <strong>not under the influence of alcohol or illegal drugs</strong>. Violation results in immediate service termination with no refund.</p>
-
+<p><strong>Indecent behaviour, sexually inappropriate advances, or rude conduct will result in immediate service termination. No refund will be provided in such cases.</strong></p>
+<p>By booking, the client confirms they are <strong>not under the influence of alcohol or illegal drugs</strong>.</p>
 <h2>5a. Minor Policy</h2>
 <p>Individuals under the age of <strong>18 (minors) are not permitted</strong> to avail services unless accompanied by a parent or legal guardian throughout the session. Valid ID proof of both the minor and guardian is mandatory.</p>
-
 <h2>6. Health &amp; Safety</h2>
 <ul>
-  <li>Customers <strong>must disclose</strong> any allergies, skin conditions, pregnancy, or health conditions such as high blood pressure, diabetes, or cardiac issues before the session.</li>
-  <li>The Spa is <strong>not responsible</strong> if the client has concealed relevant health information that results in an adverse reaction.</li>
-  <li>The Spa is not liable for any <strong>normal physiological reactions</strong> (temporary soreness, mild redness, etc.) following therapy.</li>
+  <li>Customers <strong>must disclose</strong> any allergies, skin conditions, pregnancy, or health conditions before the session.</li>
+  <li>The Spa is <strong>not responsible</strong> if the client has concealed relevant health information.</li>
   <li><strong>Cross-gender massage policy:</strong> Male clients are assigned male therapists and female clients are assigned female therapists, in accordance with local regulatory guidelines.</li>
 </ul>
-
 <h2>7. Mandatory ID Proof</h2>
-<p><strong>A valid Government-issued ID (Aadhaar Card, PAN Card, Voter ID, Passport, or Driving Licence) is mandatory for every booking and walk-in visit.</strong> Entry may be refused without valid ID.</p>
-<p><strong>Note:</strong> IDs are verified physically at the center and are <strong>not stored digitally</strong> on website servers. ID details are recorded only in our on-premises physical register as required by government guidelines.</p>
-
+<p><strong>A valid Government-issued ID (Aadhaar Card, PAN Card, Voter ID, Passport, or Driving Licence) is mandatory for every booking and walk-in visit.</strong></p>
+<p><strong>Note:</strong> IDs are verified physically at the center and are <strong>not stored digitally</strong> on website servers.</p>
 <h2>8. Privacy &amp; Data</h2>
-<p>Customer data (name, phone number, ID type) will be kept secure and <strong>shared with government regulators/Police only if required by law</strong>. We do not sell personal data to third parties.</p>
-
+<p>Customer data will be kept secure and <strong>shared with government regulators/Police only if required by law</strong>. We do not sell personal data to third parties.</p>
 <h2>9. Limitation of Liability</h2>
-<p>The Spa is <strong>not responsible for theft or loss of personal belongings</strong>. Clients are advised to secure their valuables. The Spa is also not liable for normal physiological reactions following therapy.</p>
-
+<p>The Spa is <strong>not responsible for theft or loss of personal belongings</strong>.</p>
 <h2>10. Gift Vouchers &amp; Membership</h2>
 <ul>
-  <li>Gift Vouchers and Membership plans are <strong>non-transferable and pro-rata refundable</strong>, subject to Point 3 (Cancellation Policy).</li>
+  <li>Gift Vouchers and Membership plans are <strong>non-transferable and pro-rata refundable</strong>, subject to Point 3.</li>
   <li>Unused sessions are carry-forward eligible as per plan terms.</li>
 </ul>
-
 <h2>11. Refer &amp; Earn</h2>
 <p>Valid only on services above ₹1,500. One referral discount per transaction. Subject to change without prior notice.</p>
-
 <h2>12. Therapist Certification</h2>
-<p>All Mauli Spa therapists hold recognized diplomas/certificates in Ayurvedic massage or wellness therapy. Certifications are available for inspection on premises.</p>
-
+<p>All Mauli Spa therapists hold recognized diplomas/certificates in Ayurvedic massage or wellness therapy.</p>
 <h2>13. Governing Law</h2>
 <p>These terms are governed by the laws of Maharashtra, India. Disputes shall be resolved in Pune courts.</p>
-
 <h2>14. Contact</h2>
 <p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>
 <p style="margin-top:16px;font-size:.85rem;color:#888;">NIC Code: 86901 &nbsp;|&nbsp; UDYAM-MH-26-0887153</p>`;
 
 const TERMS_HI = `
 <h2>1. शर्तों की स्वीकृति</h2>
-<p><strong>माउली स्पा</strong>, माउली आयुर्वेदिक मसाज थेरेपी का एक ब्रांड नाम है, जो प्रामाणिक आयुर्वेदिक wellness सेवाएं प्रदान करता है।</p>
-<p>माउली स्पा की सेवाओं का उपयोग करके आप इन नियमों और शर्तों से सहमत होते हैं। ये सभी clients पर लागू होते हैं जो Shop No 112, First Floor, The Business Hub, Karve Road, Kothrud, Pune 411038 पर आते हैं या ऑनलाइन बुकिंग करते हैं।</p>
-
+<p><strong>माउली स्पा</strong>, माउली आयुर्वेदिक मसाज थेरेपी का एक ब्रांड नाम है।</p>
+<p>माउली स्पा की सेवाओं का उपयोग करके आप इन नियमों और शर्तों से सहमत होते हैं।</p>
 <h2>2. वेबसाइट और IP रखरखाव</h2>
-<p>तकनीकी प्रबंधन और वेबसाइट अपडेट विशेष रूप से <strong>Leadknight</strong> द्वारा handled किए जाते हैं। वेबसाइट के source code में unauthorized access या third-party modifications सख्त वर्जित है।</p>
-<p>इस वेबसाइट पर मौजूद सारा content (text, images, logos, videos aur layout) माउली आयुर्वेदिक मसाज थेरेपी की property है। बिना written permission के इसका उपयोग Indian Copyright Act 1957 के तहत गैर-कानूनी है।</p>
-
+<p>तकनीकी प्रबंधन विशेष रूप से <strong>Leadknight</strong> द्वारा handled किए जाते हैं। सभी content माउली आयुर्वेदिक मसाज थेरेपी की property है।</p>
 <h2>3. बुकिंग और रद्दीकरण नीति</h2>
 <ul>
-  <li>Guaranteed slot के लिए advance booking recommended है। Walk-in availability के अनुसार होगी।</li>
-  <li>Refund के लिए cancellation <strong>scheduled appointment से 48 घंटे पहले</strong> होनी चाहिए।</li>
-  <li><strong>No-show या last-minute cancellation</strong> पर booking deposit जब्त हो जाएगी। कोई refund नहीं दिया जाएगा।</li>
-  <li><strong>Membership pro-rata refund:</strong> Used sessions की cost card value से घटाकर calculate होगी। Silver, Gold, Platinum membership के लिए 3 महीने के अंदर cancel करने पर <strong>10% service charge</strong> लागू होगा।</li>
+  <li>Cancellation <strong>48 घंटे पहले</strong> होनी चाहिए।</li>
+  <li>No-show पर deposit जब्त। 3 महीने में cancel पर <strong>10% service charge</strong>।</li>
 </ul>
-
 <h2>4. स्वास्थ्य अस्वीकरण</h2>
-<p><strong>माउली स्पा की सेवाएं केवल therapeutic और wellness उद्देश्यों के लिए हैं। यह कोई medical या sexual service नहीं है।</strong></p>
-<p>Massage therapy medical treatment का विकल्प नहीं है। गंभीर medical conditions वाले clients (heart disease, cancer, pregnancy, recent surgery आदि) को booking से पहले अपने physician से consult करना चाहिए।</p>
-
+<p><strong>यह केवल therapeutic सेवा है। Medical या sexual service नहीं।</strong></p>
 <h2>5. ग्राहक आचरण</h2>
-<p><strong>अशोभनीय व्यवहार, यौन रूप से अनुचित advances, या अभद्र आचरण के परिणामस्वरूप तुरंत service समाप्त कर दी जाएगी। ऐसी स्थिति में कोई refund नहीं दिया जाएगा।</strong></p>
-<p>बुकिंग करके client यह confirm करता है कि वह <strong>शराब या अवैध drugs के प्रभाव में नहीं है</strong>।</p>
-
+<p><strong>अशोभनीय व्यवहार पर तुरंत service बंद। कोई refund नहीं।</strong></p>
 <h2>5a. नाबालिग नीति</h2>
-<p><strong>18 वर्ष से कम आयु के clients (नाबालिग)</strong> को session के दौरान parent या legal guardian के साथ आना अनिवार्य है। नाबालिग और guardian दोनों का valid ID proof mandatory है।</p>
-
+<p><strong>18 वर्ष से कम</strong> के clients के साथ guardian अनिवार्य।</p>
 <h2>6. स्वास्थ्य एवं सुरक्षा</h2>
-<ul>
-  <li>Clients को session शुरू होने से पहले कोई भी allergy, skin condition, pregnancy, या high blood pressure, diabetes जैसी health conditions <strong>अवश्य बताएं</strong>।</li>
-  <li>Spa <strong>उत्तरदायी नहीं है</strong> यदि client ने relevant health information छुपाई हो।</li>
-  <li>Therapy के बाद <strong>सामान्य physiological reactions</strong> (temporary soreness, mild redness आदि) के लिए Spa उत्तरदायी नहीं है।</li>
-  <li><strong>Cross-gender massage नीति:</strong> Male clients के लिए male therapists और female clients के लिए female therapists assigned किए जाते हैं, government guidelines के अनुसार।</li>
-</ul>
-
+<ul><li>Session से पहले सभी health conditions बताएं।</li><li>Cross-gender massage: Male को male, female को female therapist।</li></ul>
 <h2>7. अनिवार्य ID Proof</h2>
-<p><strong>प्रत्येक booking और walk-in visit के लिए valid Government-issued ID (Aadhaar Card, PAN Card, Voter ID, Passport, या Driving Licence) अनिवार्य है।</strong></p>
-<p><strong>नोट:</strong> IDs को center पर physically verify किया जाता है और <strong>website servers पर digitally store नहीं किया जाता</strong>। ID details केवल हमारे on-premises physical register में government guidelines के अनुसार दर्ज की जाती हैं।</p>
-
-<h2>8. गोपनीयता एवं डेटा</h2>
-<p>Customer data (name, phone number, ID type) सुरक्षित रखा जाएगा और <strong>केवल कानून द्वारा आवश्यक होने पर Government regulators/Police के साथ share किया जाएगा</strong>। Personal data तीसरे पक्ष को नहीं बेचा जाता।</p>
-
-<h2>9. दायित्व की सीमा</h2>
-<p>Spa <strong>personal belongings की चोरी या हानि के लिए उत्तरदायी नहीं है</strong>। Clients को अपनी valuables सुरक्षित रखने की सलाह दी जाती है।</p>
-
-<h2>10. Gift Vouchers और Membership</h2>
-<ul>
-  <li>Gift Vouchers और Membership plans <strong>non-transferable और pro-rata refundable</strong> हैं, Point 3 के अनुसार।</li>
-  <li>Unused sessions plan terms के अनुसार carry-forward eligible हैं।</li>
-</ul>
-
-<h2>11. Refer और Earn</h2>
-<p>केवल ₹1,500 से ऊपर की services पर valid। प्रति transaction एक referral discount। बिना prior notice के बदलाव का अधिकार सुरक्षित है।</p>
-
-<h2>12. Therapist Certification</h2>
-<p>माउली स्पा के सभी therapists के पास Ayurvedic massage या wellness therapy में recognized diploma/certificate है। Certifications premises पर inspection के लिए available हैं।</p>
-
-<h2>13. शासन विधि</h2>
-<p>ये नियम महाराष्ट्र, भारत के कानूनों द्वारा governed हैं। विवादों का समाधान पुणे न्यायालयों में किया जाएगा।</p>
-
-<h2>14. संपर्क</h2>
+<p><strong>हर visit पर Government ID अनिवार्य।</strong> Digitally store नहीं होती।</p>
+<h2>8-14. अन्य नियम</h2>
+<p>Data secure रखा जाएगा। Personal belongings की जिम्मेदारी नहीं। Maharashtra law applicable।</p>
 <p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>
 <p style="margin-top:16px;font-size:.85rem;color:#888;">NIC Code: 86901 &nbsp;|&nbsp; UDYAM-MH-26-0887153</p>`;
 
 const TERMS_MR = `
 <h2>1. अटींची स्वीकृती</h2>
-<p><strong>माउली स्पा</strong>, माउली आयुर्वेदिक मसाज थेरपीचे एक ब्रँड नाव आहे, जे प्रामाणिक आयुर्वेदिक wellness सेवा पुरवते.</p>
-<p>माउली स्पाच्या सेवा वापरून आपण या अटी व शर्तींशी सहमत आहात. या Shop No 112, First Floor, The Business Hub, Karve Road, Kothrud, Pune 411038 येथे येणाऱ्या सर्व clients वर लागू होतात.</p>
-
+<p><strong>माउली स्पा</strong>, माउली आयुर्वेदिक मसाज थेरपीचे ब्रँड नाव आहे।</p>
 <h2>2. वेबसाइट आणि IP देखभाल</h2>
-<p>तांत्रिक व्यवस्थापन आणि वेबसाइट अपडेट विशेषत: <strong>Leadknight</strong> द्वारे हाताळले जातात. वेबसाइटच्या source code मध्ये unauthorized access किंवा third-party बदल कडकपणे प्रतिबंधित आहेत.</p>
-<p>या वेबसाइटवरील सर्व content (text, images, logos, videos, layout) माउली आयुर्वेदिक मसाज थेरपीची मालमत्ता आहे. Written permission शिवाय वापर Indian Copyright Act 1957 अंतर्गत बेकायदेशीर आहे.</p>
-
-<h2>3. बुकिंग आणि रद्द करण्याचे धोरण</h2>
-<ul>
-  <li>Guaranteed slot साठी advance booking शिफारसीय आहे. Walk-in उपलब्धतेनुसार असेल.</li>
-  <li>Refund साठी cancellation <strong>scheduled appointment च्या 48 तास आधी</strong> असणे आवश्यक आहे.</li>
-  <li><strong>No-show किंवा last-minute cancellation</strong> वर booking deposit जप्त केली जाईल. कोणताही refund दिला जाणार नाही.</li>
-  <li><strong>Membership pro-rata refund:</strong> वापरलेल्या sessions ची किंमत एकूण card value मधून वजा करून calculate केली जाईल. Silver, Gold, Platinum membership साठी 3 महिन्यांच्या आत cancel केल्यास <strong>10% service charge</strong> लागेल.</li>
-</ul>
-
+<p>तांत्रिक व्यवस्थापन <strong>Leadknight</strong> द्वारे. सर्व content माउलीची मालमत्ता.</p>
+<h2>3. बुकिंग आणि रद्द धोरण</h2>
+<ul><li>Cancellation <strong>48 तास आधी</strong>. 3 महिन्यांत cancel = <strong>10% charge</strong>.</li></ul>
 <h2>4. आरोग्य अस्वीकरण</h2>
-<p><strong>माउली स्पाच्या सेवा केवळ therapeutic आणि wellness हेतूंसाठी आहेत. ही कोणतीही medical किंवा लैंगिक सेवा नाही.</strong></p>
-<p>Massage therapy ही medical treatment चा पर्याय नाही. गंभीर medical conditions असलेल्या clients नी (heart disease, cancer, pregnancy, recent surgery इ.) booking आधी physician चा सल्ला घ्यावा.</p>
-
+<p><strong>केवळ therapeutic सेवा. Medical/sexual नाही.</strong></p>
 <h2>5. ग्राहक आचरण</h2>
-<p><strong>अशोभनीय वर्तन, लैंगिकदृष्ट्या अयोग्य advances, किंवा उद्धट वर्तन यामुळे तत्काळ service संपुष्टात येईल. अशा प्रकरणात कोणताही refund दिला जाणार नाही.</strong></p>
-<p>बुकिंग करून client हे confirm करतो की ते <strong>मद्य किंवा अवैध drugs च्या प्रभावाखाली नाहीत</strong>.</p>
-
+<p><strong>अशोभनीय वर्तन = तत्काळ service बंद. Refund नाही.</strong></p>
 <h2>5a. अल्पवयीन धोरण</h2>
-<p><strong>18 वर्षांपेक्षा कमी वयाच्या clients (अल्पवयीन)</strong> ना संपूर्ण session दरम्यान parent किंवा legal guardian सोबत येणे अनिवार्य आहे. अल्पवयीन आणि guardian दोघांचेही valid ID proof mandatory आहे.</p>
-
-<h2>6. आरोग्य आणि सुरक्षा</h2>
-<ul>
-  <li>Clients नी session सुरू होण्यापूर्वी कोणतीही allergy, skin condition, pregnancy, किंवा high blood pressure, diabetes यासारख्या health conditions <strong>अवश्य सांगाव्यात</strong>.</li>
-  <li>Client ने relevant health information लपवल्यामुळे होणाऱ्या adverse reaction साठी Spa <strong>जबाबदार नाही</strong>.</li>
-  <li>Therapy नंतरच्या <strong>सामान्य physiological reactions</strong> साठी Spa जबाबदार नाही.</li>
-  <li><strong>Cross-gender massage धोरण:</strong> Male clients साठी male therapists आणि female clients साठी female therapists नेमले जातात, government guidelines नुसार.</li>
-</ul>
-
-<h2>7. अनिवार्य ID Proof</h2>
-<p><strong>प्रत्येक booking आणि walk-in visit साठी valid Government-issued ID (Aadhaar Card, PAN Card, Voter ID, Passport, किंवा Driving Licence) अनिवार्य आहे.</strong></p>
-<p><strong>नोंद:</strong> IDs center वर physically verify केल्या जातात आणि <strong>website servers वर digitally store केल्या जात नाहीत</strong>. ID details केवळ आमच्या on-premises physical register मध्ये government guidelines नुसार नोंदवल्या जातात.</p>
-
-<h2>8. गोपनीयता आणि डेटा</h2>
-<p>Customer data सुरक्षित ठेवले जाईल आणि <strong>केवळ कायद्याने आवश्यक असल्यास Government regulators/Police सोबत share केले जाईल</strong>. Personal data तृतीय पक्षाला विकले जात नाही.</p>
-
-<h2>9. दायित्वाची मर्यादा</h2>
-<p>Spa <strong>personal belongings च्या चोरी किंवा नुकसानासाठी जबाबदार नाही</strong>. Clients ना त्यांच्या valuables सुरक्षित ठेवण्याचा सल्ला दिला जातो.</p>
-
-<h2>10. Gift Vouchers आणि Membership</h2>
-<ul>
-  <li>Gift Vouchers आणि Membership plans <strong>non-transferable आणि pro-rata refundable</strong> आहेत, Point 3 नुसार.</li>
-  <li>न वापरलेले sessions plan terms नुसार carry-forward eligible आहेत.</li>
-</ul>
-
-<h2>11. Refer आणि Earn</h2>
-<p>केवळ ₹1,500 पेक्षा जास्त services साठी valid. प्रति transaction एक referral discount. पूर्व सूचनेशिवाय बदल करण्याचा अधिकार राखीव.</p>
-
-<h2>12. Therapist Certification</h2>
-<p>माउली स्पाच्या सर्व therapists कडे Ayurvedic massage किंवा wellness therapy मध्ये recognized diploma/certificate आहे. Certifications premises वर inspection साठी उपलब्ध आहेत.</p>
-
-<h2>13. शासन कायदा</h2>
-<p>या अटी महाराष्ट्र, भारताच्या कायद्यांनुसार governed आहेत. विवाद पुण्याच्या न्यायालयात सोडवले जातील.</p>
-
-<h2>14. संपर्क</h2>
+<p><strong>18 वर्षांखाली</strong> = guardian अनिवार्य.</p>
+<h2>6-14. इतर अटी</h2>
+<p>Cross-gender नाही. ID mandatory. Data secure. Maharashtra law.</p>
 <p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>
 <p style="margin-top:16px;font-size:.85rem;color:#888;">NIC Code: 86901 &nbsp;|&nbsp; UDYAM-MH-26-0887153</p>`;
 
@@ -578,84 +467,40 @@ const PRIVACY_EN = `
   <li>To comply with legal/regulatory obligations</li>
 </ul>
 <h2>3. Data Storage &amp; Security</h2>
-<p>Your information is stored securely and is <strong>not shared with third parties</strong> without consent, except as required by law (Police/Government regulators).</p>
+<p>Your information is stored securely and is <strong>not shared with third parties</strong> without consent, except as required by law.</p>
 <h2>4. ID Proof Data</h2>
-<p>Government ID information is used solely for identity verification. It is verified physically at the center — not stored digitally on website servers. This information will <strong>only be disclosed to law enforcement authorities if legally required</strong>. Personal data is retained for a <strong>maximum of 90 days</strong> and then securely deleted, unless government regulations require longer retention.</p>
+<p>Government ID is verified physically — not stored digitally. Retained for <strong>maximum 90 days</strong> then securely deleted.</p>
 <h2>5. Cookies</h2>
 <p>Our website may use cookies to enhance user experience, including remembering your language preference.</p>
 <h2>6. WhatsApp Communication</h2>
-<p>When you contact us via WhatsApp (operated by Meta Platforms, Inc.), your messages are subject to WhatsApp's privacy policy.</p>
+<p>Messages via WhatsApp are subject to WhatsApp's privacy policy (Meta Platforms, Inc.).</p>
 <h2>7. Your Rights (DPDP Act 2023)</h2>
 <ul>
   <li>Right to access your personal data</li>
   <li>Right to correction of inaccurate data</li>
-  <li>Right to deletion of your data (subject to legal retention requirements)</li>
+  <li>Right to deletion of your data</li>
   <li>Right to opt out of marketing communications</li>
 </ul>
 <h2>8. Children's Privacy</h2>
-<p>Our services are not directed at individuals under 18 without parental/guardian written consent. Minors must be accompanied by an adult at all times.</p>
+<p>Services are not directed at individuals under 18 without parental/guardian written consent.</p>
 <h2>9. Contact Us</h2>
 <p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>`;
 
 const PRIVACY_HI = `
-<h2>1. हम क्या जानकारी एकत्र करते हैं</h2>
-<p>जब आप बुकिंग करते हैं या हमसे संपर्क करते हैं, तो हम नाम, फोन नंबर, email, Government ID type, और service preferences collect करते हैं।</p>
-<h2>2. हम आपकी जानकारी का उपयोग कैसे करते हैं</h2>
-<ul>
-  <li>Appointments confirm और manage करने के लिए</li>
-  <li>Wellness tips भेजने के लिए (केवल subscribed होने पर)</li>
-  <li>हमारी सेवाएं बेहतर करने के लिए</li>
-  <li>कानूनी/नियामक दायित्वों का पालन करने के लिए</li>
-</ul>
-<h2>3. Data Storage और Security</h2>
-<p>आपकी जानकारी सुरक्षित रखी जाती है और बिना सहमति के <strong>third parties के साथ share नहीं की जाती</strong>, सिवाय कानूनी आवश्यकता के (Police/Government regulators)।</p>
-<h2>4. ID Proof Data</h2>
-<p>Government ID information केवल identity verification के लिए उपयोग होती है। इसे center पर physically verify किया जाता है — website servers पर digitally store नहीं होती। यह जानकारी <strong>केवल law enforcement को कानूनी रूप से आवश्यक होने पर</strong> दी जाएगी। Personal data <strong>maximum 90 दिन</strong> तक retain किया जाता है, फिर securely delete कर दिया जाता है।</p>
-<h2>5. Cookies</h2>
-<p>हमारी website user experience बेहतर करने के लिए cookies का उपयोग कर सकती है, जिसमें आपकी language preference याद रखना शामिल है।</p>
-<h2>6. WhatsApp Communication</h2>
-<p>जब आप WhatsApp (Meta Platforms, Inc. द्वारा संचालित) के माध्यम से हमसे संपर्क करते हैं, तो आपके messages WhatsApp की privacy policy के अधीन हैं।</p>
-<h2>7. आपके अधिकार (DPDP Act 2023)</h2>
-<ul>
-  <li>अपने personal data तक पहुंच का अधिकार</li>
-  <li>गलत data को सुधारने का अधिकार</li>
-  <li>Data deletion का अधिकार (कानूनी retention requirements के अनुसार)</li>
-  <li>Marketing communications से opt out करने का अधिकार</li>
-</ul>
-<h2>8. बच्चों की गोपनीयता</h2>
-<p>हमारी सेवाएं बिना parental/guardian written consent के 18 वर्ष से कम आयु के व्यक्तियों के लिए नहीं हैं। Minors को हर समय adult के साथ आना चाहिए।</p>
-<h2>9. हमसे संपर्क करें</h2>
-<p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>`;
+<h2>1. जानकारी</h2><p>बुकिंग पर नाम, फोन, email, ID type collect होती है।</p>
+<h2>2. उपयोग</h2><ul><li>Appointments manage करना</li><li>Wellness tips (subscribed होने पर)</li><li>Legal compliance</li></ul>
+<h2>3. सुरक्षा</h2><p>Third parties को share नहीं। Law की जरूरत पर ही।</p>
+<h2>4. ID Data</h2><p>Physically verify, digitally store नहीं। <strong>90 दिन</strong> बाद delete।</p>
+<h2>5-9. अन्य</h2><p>Cookies, WhatsApp Meta policy, DPDP Act 2023 rights applicable।</p>
+<p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a></p>`;
 
 const PRIVACY_MR = `
-<h2>1. आम्ही कोणती माहिती गोळा करतो</h2>
-<p>जेव्हा आपण बुकिंग करता किंवा आमच्याशी संपर्क करता, तेव्हा आम्ही नाव, फोन नंबर, email, Government ID type, आणि service preferences गोळा करतो.</p>
-<h2>2. आम्ही आपली माहिती कशी वापरतो</h2>
-<ul>
-  <li>Appointments confirm आणि manage करण्यासाठी</li>
-  <li>Wellness tips पाठवण्यासाठी (केवळ subscribe केल्यास)</li>
-  <li>आमच्या सेवा सुधारण्यासाठी</li>
-  <li>कायदेशीर/नियामक जबाबदाऱ्या पूर्ण करण्यासाठी</li>
-</ul>
-<h2>3. Data Storage आणि Security</h2>
-<p>आपली माहिती सुरक्षित ठेवली जाते आणि संमतीशिवाय <strong>third parties सोबत share केली जात नाही</strong>, कायदेशीर आवश्यकता वगळता (Police/Government regulators).</p>
-<h2>4. ID Proof Data</h2>
-<p>Government ID माहिती केवळ identity verification साठी वापरली जाते. ती center वर physically verify केली जाते — website servers वर digitally store केली जात नाही. ही माहिती <strong>केवळ law enforcement ला कायदेशीरपणे आवश्यक असल्यासच</strong> दिली जाईल. Personal data <strong>जास्तीत जास्त 90 दिवस</strong> retain केले जाते, नंतर securely delete केले जाते.</p>
-<h2>5. Cookies</h2>
-<p>आमची website user experience सुधारण्यासाठी cookies वापरू शकते, ज्यात आपची language preference लक्षात ठेवणे समाविष्ट आहे.</p>
-<h2>6. WhatsApp Communication</h2>
-<p>जेव्हा आपण WhatsApp (Meta Platforms, Inc. द्वारे चालवले जाते) द्वारे आमच्याशी संपर्क करता, तेव्हा आपले messages WhatsApp च्या privacy policy च्या अधीन आहेत.</p>
-<h2>7. आपले अधिकार (DPDP Act 2023)</h2>
-<ul>
-  <li>आपल्या personal data ची access मिळवण्याचा अधिकार</li>
-  <li>चुकीची माहिती दुरुस्त करण्याचा अधिकार</li>
-  <li>Data deletion चा अधिकार (कायदेशीर retention requirements नुसार)</li>
-  <li>Marketing communications मधून opt out करण्याचा अधिकार</li>
-</ul>
-<h2>8. मुलांची गोपनीयता</h2>
-<p>आमच्या सेवा parental/guardian written consent शिवाय 18 वर्षांपेक्षा कमी वयाच्या व्यक्तींसाठी नाहीत. Minors ना नेहमी adult सोबत असणे आवश्यक आहे.</p>
-<h2>9. आमच्याशी संपर्क करा</h2>
-<p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a> | Phone: <a href="tel:9156972622">9156972622</a></p>`;
+<h2>1. माहिती</h2><p>बुकिंगवर नाव, फोन, email, ID type गोळा केली जाते.</p>
+<h2>2. वापर</h2><ul><li>Appointments manage</li><li>Wellness tips</li><li>Legal compliance</li></ul>
+<h2>3. सुरक्षा</h2><p>Third party ला share नाही. कायद्याने आवश्यक असल्यासच.</p>
+<h2>4. ID Data</h2><p>Physically verify. <strong>90 दिवसांनंतर</strong> delete.</p>
+<h2>5-9. इतर</h2><p>Cookies, WhatsApp Meta policy, DPDP Act 2023 लागू.</p>
+<p>Email: <a href="mailto:maulispa33@gmail.com">maulispa33@gmail.com</a></p>`;
 
 /* ── THERAPY DATA ─────────────────────────────────────────── */
 const THERAPY_EN={
@@ -675,9 +520,9 @@ const THERAPY_EN={
   thHead:"Head Massage",thHeadPrice:"₹499",thHeadDur:"25 mins",thHeadShort:"Shiroabhyanga — traditional Indian head massage for stress and hair health.",thHeadLong:"Scalp, neck and shoulder massage with warm oil directly soothes the brain. Effective for migraines, hair fall and insomnia.",thHeadP1:"Migraine and headache relief",thHeadP2:"Hair fall reduced",thHeadP3:"Scalp health improved",thHeadP4:"Neck stiffness released",thHeadM1:"Immediate stress relief",thHeadM2:"Mental clarity",thHeadM3:"Better concentration",thHeadM4:"Help with insomnia",thHeadFor:"Students, professionals, migraine patients, hair health."
 };
 
-const THERAPY_HI={thSpaPack:"स्पा पैक",thSpaPackPrice:"₹3,999",thSpaPackDur:"पूरा पैक",thSpaPackShort:"संपूर्ण वेलनेस: सफाई, स्क्रब, स्टीम और पूरे शरीर की मालिश।",thSpaPackLong:"हमारे Spa Pack में complete wellness journey मिलती है।",thSpaPackP1:"गहरी सफाई और detoxification",thSpaPackP2:"त्वचा को नरम करना और प्राकृतिक चमक",thSpaPackP3:"मांसपेशियों के तनाव से राहत",thSpaPackP4:"बेहतर रक्त संचार",thSpaPackM1:"संपूर्ण विश्राम",thSpaPackM2:"तनाव और चिंता से मुक्ति",thSpaPackM3:"मन को ताजगी",thSpaPackFor:"जो पूर्ण rejuvenation चाहते हैं।",thPotli:"पोटली मसाज",thPotliPrice:"₹2,999",thPotliDur:"90 मिनट",thPotliShort:"गर्म जड़ी-बूटियों की पोटली से गहरी दर्द राहत।",thPotliLong:"Herbal heat गहरी muscles में जाकर पुराना दर्द, गठिया और अकड़न दूर करती है।",thPotliP1:"जोड़ों के दर्द और गठिया में राहत",thPotliP2:"मांसपेशियों की अकड़न कम",thPotliP3:"गहरी गर्मी से circulation बेहतर",thPotliP4:"त्वचा को पोषण",thPotliM1:"गहरा विश्राम",thPotliM2:"बेहतर नींद",thPotliM3:"तनाव हार्मोन कम",thPotliFor:"जोड़ों के दर्द, गठिया रोगी और बुजुर्गों के लिए।",thCouple:"कपल मसाज",thCouplePrice:"₹2,699",thCoupleDur:"60 मिनट प्रति व्यक्ति",thCoupleShort:"दो के लिए साझा वेलनेस।",thCoupleLong:"दोनों के लिए side-by-side मसाज।",thCoupleP1:"दोनों के लिए पूर्ण शरीर का विश्राम",thCoupleP2:"मांसपेशियों का तनाव दूर",thCoupleP3:"बेहतर रक्त संचार",thCoupleM1:"भावनात्मक बंधन मजबूत",thCoupleM2:"साझा गहरा विश्राम",thCoupleM3:"तनाव से मुक्ति",thCoupleFor:"Couples के लिए।",thMedOil:"औषधीय तेल मालिश",thMedOilPrice:"₹2,499",thMedOilDur:"75 मिनट",thMedOilShort:"Dosha के हिसाब से Therapeutic Ayurvedic oil massage।",thMedOilLong:"Specific Ayurvedic oils deep tissue में penetrate करके healing accelerate करती हैं।",thMedOilP1:"Dosha संतुलन",thMedOilP2:"Deep tissue पोषण",thMedOilP3:"जोड़ों का स्नेहन बेहतर",thMedOilP4:"विषाक्त पदार्थ निकलना",thMedOilM1:"मन-शरीर संतुलन",thMedOilM2:"मानसिक स्पष्टता",thMedOilM3:"चिंता कम",thMedOilFor:"विशेष स्वास्थ्य समस्याओं वाले।",thDeepTissue:"डीप टिशू मसाज",thDeepTissuePrice:"₹2,199",thDeepTissueDur:"70 मिनट",thDeepTissueShort:"पुरानी मांसपेशियों के तनाव के लिए गहरा दबाव।",thDeepTissueLong:"Chronic muscle tension और knots को target करने के लिए deep pressure।",thDeepP1:"पुरानी मांसपेशियों का तनाव दूर",thDeepP2:"चोट से उबरना तेज़",thDeepP3:"मुद्रा बेहतर",thDeepP4:"रक्तचाप कम",thDeepM1:"गहरा विश्राम",thDeepM2:"दर्द से मुक्ति के बाद शांति",thDeepM3:"शरीर के प्रति जागरूकता",thDeepFor:"Athletes, office workers।",thAloe:"एलोवेरा जेल मसाज",thAloePrice:"₹1,999",thAloeDur:"60 मिनट",thAloeShort:"गहरी हाइड्रेशन के लिए cooling aloe vera massage।",thAloeLong:"Pure aloe vera gel skin को deep hydrate करता है।",thAloeP1:"गहरी त्वचा हाइड्रेशन",thAloeP2:"सूजन कम",thAloeP3:"Sunburn से राहत",thAloeP4:"त्वचा की बनावट बेहतर",thAloeM1:"Cooling sensation",thAloeM2:"तुरंत विश्राम",thAloeM3:"आत्मविश्वास",thAloeFor:"Dry skin, sensitive skin।",thCream:"क्रीम मसाज",thCreamPrice:"₹1,799",thCreamDur:"60 मिनट",thCreamShort:"पोषित और चमकदार त्वचा के लिए cream massage।",thCreamLong:"Premium moisturizing cream skin में absorb होती है।",thCreamP1:"गहन त्वचा नमी",thCreamP2:"चिकनी और मुलायम त्वचा",thCreamP3:"Cell renewal",thCreamP4:"शरीर दर्द कम",thCreamM1:"Pampered feeling",thCreamM2:"तनाव दूर",thCreamM3:"Luxury अनुभव",thCreamFor:"Dry skin treatment के साथ relaxation।",thTilTel:"तिल तेल मसाज",thTilTelPrice:"₹1,499",thTilTelDur:"60 मिनट",thTilTelShort:"पारंपरिक तिल तेल की गर्माहट।",thTilTelLong:"पारंपरिक आयुर्वेदिक अभ्यंग।",thTilP1:"वात दोष संतुलन",thTilP2:"जोड़ों की ताकत",thTilP3:"हड्डियों का घनत्व",thTilP4:"सर्दियों में गर्माहट",thTilM1:"Grounding effect",thTilM2:"चिंता कम",thTilM3:"बेहतर नींद",thTilFor:"बुजुर्ग, सर्दियों में गर्माहट चाहने वाले।",thPowder:"पाउडर मसाज",thPowderPrice:"₹1,299",thPowderDur:"45 मिनट",thPowderShort:"Udvartana — detox के लिए dry herbal powder massage।",thPowderLong:"Dry herbal powder से vigorous massage।",thPowderP1:"Fat reduction में help",thPowderP2:"Lymphatic drainage",thPowderP3:"Skin exfoliation",thPowderP4:"Cellulite कम",thPowderM1:"Energized feeling",thPowderM2:"Confidence boost",thPowderM3:"Body awareness",thPowderFor:"Weight management, natural detox।",thFacial:"फेशियल",thFacialPrice:"₹999",thFacialDur:"60 मिनट",thFacialShort:"चमकदार त्वचा के लिए deep cleansing Ayurvedic facial।",thFacialLong:"Natural herbs से skin deep cleanse।",thFacialP1:"Deep pore cleansing",thFacialP2:"Dead skin removal",thFacialP3:"Natural glow",thFacialP4:"Acne कम",thFacialM1:"Refreshed feel",thFacialM2:"Self-care satisfaction",thFacialFor:"Dull, tired skin।",thBackPain:"पीठ दर्द मसाज",thBackPainPrice:"₹999",thBackPainDur:"30 मिनट",thBackPainShort:"पीठ दर्द से तुरंत राहत।",thBackPainLong:"Back muscles, spine और lower back को target करती है।",thBackP1:"पीठ दर्द तुरंत राहत",thBackP2:"Muscle spasm कम",thBackP3:"Spine alignment",thBackP4:"Posture correction",thBackM1:"शांति",thBackM2:"बेहतर concentration",thBackM3:"Work performance",thBackFor:"Office workers, IT professionals, drivers।",thLegPain:"पैर दर्द मसाज",thLegPainPrice:"₹999",thLegPainDur:"30 मिनट",thLegPainShort:"थके, दर्द भरे पैरों के लिए राहत।",thLegPainLong:"Teachers, shopkeepers, nurses के लिए perfect।",thLegP1:"पैर दर्द और cramps कम",thLegP2:"सूजन कम",thLegP3:"Blood circulation boost",thLegP4:"Varicose veins में राहत",thLegM1:"थकान से राहत",thLegM2:"Energy boost",thLegFor:"Standing jobs, athletes।",thFoot:"पैर मसाज",thFootPrice:"₹499",thFootDur:"20 मिनट",thFootShort:"Reflexology-based foot massage।",thFootLong:"पैर में पूरे शरीर के pressure points हैं।",thFootP1:"Reflex points से राहत",thFootP2:"बेहतर नींद",thFootP3:"Digestive health",thFootP4:"Headache relief",thFootM1:"तुरंत विश्राम",thFootM2:"Mental fatigue कम",thFootM3:"Mood बेहतर",thFootFor:"Quick relaxation, heel pain।",thHead:"हेड मसाज",thHeadPrice:"₹499",thHeadDur:"25 मिनट",thHeadShort:"Shiroabhyanga — तनाव और बालों के लिए।",thHeadLong:"गर्म oil से scalp, neck और shoulder massage।",thHeadP1:"Migraine relief",thHeadP2:"Hair fall कम",thHeadP3:"Scalp health",thHeadP4:"Neck stiffness दूर",thHeadM1:"तुरंत तनाव राहत",thHeadM2:"Mental clarity",thHeadM3:"बेहतर concentration",thHeadM4:"Insomnia में help",thHeadFor:"Students, professionals, migraine patients।"};
+const THERAPY_HI={thSpaPack:"स्पा पैक",thSpaPackPrice:"₹3,999",thSpaPackDur:"पूरा पैक",thSpaPackShort:"संपूर्ण वेलनेस: सफाई, स्क्रब, स्टीम और पूरे शरीर की मालिश।",thSpaPackLong:"Spa Pack में complete wellness journey मिलती है।",thSpaPackP1:"गहरी सफाई",thSpaPackP2:"त्वचा की चमक",thSpaPackP3:"मांसपेशियों का तनाव दूर",thSpaPackP4:"रक्त संचार",thSpaPackM1:"संपूर्ण विश्राम",thSpaPackM2:"तनाव मुक्ति",thSpaPackM3:"ताजगी",thSpaPackFor:"पूर्ण rejuvenation के लिए।",thPotli:"पोटली मसाज",thPotliPrice:"₹2,999",thPotliDur:"90 मिनट",thPotliShort:"गर्म जड़ी-बूटियों की पोटली से दर्द राहत।",thPotliLong:"Herbal heat से पुराना दर्द, गठिया दूर।",thPotliP1:"जोड़ों के दर्द में राहत",thPotliP2:"अकड़न कम",thPotliP3:"Circulation बेहतर",thPotliP4:"त्वचा को पोषण",thPotliM1:"गहरा विश्राम",thPotliM2:"बेहतर नींद",thPotliM3:"तनाव कम",thPotliFor:"गठिया रोगी और बुजुर्गों के लिए।",thCouple:"कपल मसाज",thCouplePrice:"₹2,699",thCoupleDur:"60 मिनट प्रति व्यक्ति",thCoupleShort:"दो के लिए साझा वेलनेस।",thCoupleLong:"Side-by-side massage।",thCoupleP1:"दोनों के लिए विश्राम",thCoupleP2:"तनाव दूर",thCoupleP3:"बेहतर रक्त संचार",thCoupleM1:"भावनात्मक बंधन",thCoupleM2:"गहरा विश्राम",thCoupleM3:"तनाव मुक्ति",thCoupleFor:"Couples के लिए।",thMedOil:"औषधीय तेल मालिश",thMedOilPrice:"₹2,499",thMedOilDur:"75 मिनट",thMedOilShort:"Dosha के हिसाब से Ayurvedic oil massage।",thMedOilLong:"Deep tissue healing।",thMedOilP1:"Dosha संतुलन",thMedOilP2:"Deep tissue पोषण",thMedOilP3:"जोड़ों का स्नेहन",thMedOilP4:"Toxin निकलना",thMedOilM1:"मन-शरीर संतुलन",thMedOilM2:"मानसिक स्पष्टता",thMedOilM3:"चिंता कम",thMedOilFor:"विशेष स्वास्थ्य समस्याओं वाले।",thDeepTissue:"डीप टिशू मसाज",thDeepTissuePrice:"₹2,199",thDeepTissueDur:"70 मिनट",thDeepTissueShort:"पुरानी मांसपेशियों के तनाव के लिए गहरा दबाव।",thDeepTissueLong:"Chronic muscle tension के लिए।",thDeepP1:"पुराना तनाव दूर",thDeepP2:"चोट से उबरना",thDeepP3:"मुद्रा बेहतर",thDeepP4:"रक्तचाप कम",thDeepM1:"गहरा विश्राम",thDeepM2:"शांति",thDeepM3:"शरीर जागरूकता",thDeepFor:"Athletes, office workers।",thAloe:"एलोवेरा जेल मसाज",thAloePrice:"₹1,999",thAloeDur:"60 मिनट",thAloeShort:"Cooling aloe vera massage।",thAloeLong:"Deep hydration।",thAloeP1:"Hydration",thAloeP2:"सूजन कम",thAloeP3:"Sunburn राहत",thAloeP4:"त्वचा बेहतर",thAloeM1:"Cooling",thAloeM2:"विश्राम",thAloeM3:"आत्मविश्वास",thAloeFor:"Dry/sensitive skin।",thCream:"क्रीम मसाज",thCreamPrice:"₹1,799",thCreamDur:"60 मिनट",thCreamShort:"Cream massage।",thCreamLong:"Moisturizing cream।",thCreamP1:"नमी",thCreamP2:"मुलायम त्वचा",thCreamP3:"Cell renewal",thCreamP4:"दर्द कम",thCreamM1:"Pampered feeling",thCreamM2:"तनाव दूर",thCreamM3:"Luxury",thCreamFor:"Dry skin।",thTilTel:"तिल तेल मसाज",thTilTelPrice:"₹1,499",thTilTelDur:"60 मिनट",thTilTelShort:"पारंपरिक तिल तेल।",thTilTelLong:"Abhyanga।",thTilP1:"Vata संतुलन",thTilP2:"जोड़ों की ताकत",thTilP3:"हड्डियों का घनत्व",thTilP4:"सर्दियों में गर्माहट",thTilM1:"Grounding",thTilM2:"चिंता कम",thTilM3:"नींद",thTilFor:"बुजुर्ग, सर्दी।",thPowder:"पाउडर मसाज",thPowderPrice:"₹1,299",thPowderDur:"45 मिनट",thPowderShort:"Udvartana।",thPowderLong:"Herbal powder।",thPowderP1:"Fat reduction",thPowderP2:"Lymphatic drainage",thPowderP3:"Exfoliation",thPowderP4:"Cellulite कम",thPowderM1:"Energized",thPowderM2:"Confidence",thPowderM3:"Body awareness",thPowderFor:"Weight management।",thFacial:"फेशियल",thFacialPrice:"₹999",thFacialDur:"60 मिनट",thFacialShort:"Ayurvedic facial।",thFacialLong:"Deep cleanse।",thFacialP1:"Pore cleansing",thFacialP2:"Dead skin",thFacialP3:"Glow",thFacialP4:"Acne कम",thFacialM1:"Refreshed",thFacialM2:"Self-care",thFacialFor:"Dull skin।",thBackPain:"पीठ दर्द मसाज",thBackPainPrice:"₹999",thBackPainDur:"30 मिनट",thBackPainShort:"पीठ दर्द राहत।",thBackPainLong:"Back muscles target।",thBackP1:"दर्द राहत",thBackP2:"Spasm कम",thBackP3:"Spine alignment",thBackP4:"Posture",thBackM1:"शांति",thBackM2:"Concentration",thBackM3:"Performance",thBackFor:"Office workers।",thLegPain:"पैर दर्द मसाज",thLegPainPrice:"₹999",thLegPainDur:"30 मिनट",thLegPainShort:"थके पैरों के लिए।",thLegPainLong:"Standing jobs के लिए।",thLegP1:"दर्द कम",thLegP2:"सूजन कम",thLegP3:"Circulation",thLegP4:"Varicose veins",thLegM1:"थकान दूर",thLegM2:"Energy",thLegFor:"Standing jobs।",thFoot:"पैर मसाज",thFootPrice:"₹499",thFootDur:"20 मिनट",thFootShort:"Reflexology।",thFootLong:"Pressure points।",thFootP1:"Reflex राहत",thFootP2:"नींद",thFootP3:"Digestive",thFootP4:"Headache",thFootM1:"विश्राम",thFootM2:"Fatigue कम",thFootM3:"Mood",thFootFor:"Quick relaxation।",thHead:"हेड मसाज",thHeadPrice:"₹499",thHeadDur:"25 मिनट",thHeadShort:"Shiroabhyanga।",thHeadLong:"Scalp massage।",thHeadP1:"Migraine",thHeadP2:"Hair fall कम",thHeadP3:"Scalp",thHeadP4:"Neck stiffness",thHeadM1:"तनाव राहत",thHeadM2:"Clarity",thHeadM3:"Concentration",thHeadM4:"Insomnia",thHeadFor:"Students, professionals।"};
 
-const THERAPY_MR={thSpaPack:"स्पा पॅक",thSpaPackPrice:"₹3,999",thSpaPackDur:"संपूर्ण पॅक",thSpaPackShort:"संपूर्ण वेलनेस: साफसफाई, स्क्रब, स्टीम आणि मालिश.",thSpaPackLong:"Spa Pack मध्ये साफसफाई, स्क्रब, steam आणि deep Ayurvedic massage.",thSpaPackP1:"खोल साफसफाई",thSpaPackP2:"त्वचेची चमक",thSpaPackP3:"स्नायू आराम",thSpaPackP4:"रक्ताभिसरण",thSpaPackM1:"संपूर्ण विश्रांती",thSpaPackM2:"तणावापासून मुक्ती",thSpaPackM3:"मनाची ताजेपणा",thSpaPackFor:"संपूर्ण rejuvenation साठी.",thPotli:"पोटली मसाज",thPotliPrice:"₹2,999",thPotliDur:"90 मिनिटे",thPotliShort:"उष्ण औषधी पोटलीने खोल वेदना आराम.",thPotliLong:"Herbal heat खोल muscles मध्ये जाऊन जुने दुखणे, संधिवात आराम देते.",thPotliP1:"सांधेदुखी आराम",thPotliP2:"स्नायू कडकपणा कमी",thPotliP3:"रक्ताभिसरण सुधारते",thPotliP4:"त्वचेला पोषण",thPotliM1:"खोल विश्रांती",thPotliM2:"चांगली झोप",thPotliM3:"तणाव कमी",thPotliFor:"सांधेदुखी, संधिवात रुग्ण.",thCouple:"कपल मसाज",thCouplePrice:"₹2,699",thCoupleDur:"60 मिनिटे प्रत्येकी",thCoupleShort:"दोघांसाठी सामायिक वेलनेस.",thCoupleLong:"दोघांसाठी side-by-side massage.",thCoupleP1:"दोघांसाठी विश्रांती",thCoupleP2:"स्नायू तणाव दूर",thCoupleP3:"रक्ताभिसरण",thCoupleM1:"भावनिक बंध",thCoupleM2:"खोल विश्रांती",thCoupleM3:"तणावापासून मुक्ती",thCoupleFor:"Couples साठी.",thMedOil:"औषधी तेल मालिश",thMedOilPrice:"₹2,499",thMedOilDur:"75 मिनिटे",thMedOilShort:"Dosha नुसार Therapeutic Ayurvedic oil massage.",thMedOilLong:"Dosha नुसार specific oils deep tissues मध्ये काम करतात.",thMedOilP1:"Dosha संतुलन",thMedOilP2:"खोल ऊतक पोषण",thMedOilP3:"सांधे वंगण",thMedOilP4:"विषारी पदार्थ",thMedOilM1:"मन-शरीर संतुलन",thMedOilM2:"मानसिक स्पष्टता",thMedOilM3:"चिंता कमी",thMedOilFor:"विशिष्ट आरोग्य समस्या.",thDeepTissue:"डीप टिश्यू मसाज",thDeepTissuePrice:"₹2,199",thDeepTissueDur:"70 मिनिटे",thDeepTissueShort:"जुन्या स्नायू तणावासाठी खोल दाब.",thDeepTissueLong:"Chronic muscle tension साठी deep pressure.",thDeepP1:"जुना स्नायू तणाव दूर",thDeepP2:"दुखापत बरी जलद",thDeepP3:"मुद्रा सुधारते",thDeepP4:"रक्तदाब कमी",thDeepM1:"खोल विश्रांती",thDeepM2:"शांती",thDeepM3:"शरीराची जाणीव",thDeepFor:"Athletes, office workers.",thAloe:"एलोवेरा जेल मसाज",thAloePrice:"₹1,999",thAloeDur:"60 मिनिटे",thAloeShort:"खोल hydration साठी cooling massage.",thAloeLong:"Pure aloe vera gel त्वचेला hydrate करते.",thAloeP1:"खोल hydration",thAloeP2:"जळजळ कमी",thAloeP3:"Sunburn आराम",thAloeP4:"त्वचा पोत",thAloeM1:"Cooling sensation",thAloeM2:"त्वरित विश्रांती",thAloeM3:"आत्मविश्वास",thAloeFor:"कोरडी त्वचा.",thCream:"क्रीम मसाज",thCreamPrice:"₹1,799",thCreamDur:"60 मिनिटे",thCreamShort:"पोषित त्वचेसाठी cream massage.",thCreamLong:"Premium cream त्वचेत शोषली जाते.",thCreamP1:"त्वचा moisturization",thCreamP2:"मुलायम त्वचा",thCreamP3:"Cell renewal",thCreamP4:"दुखणे कमी",thCreamM1:"Pampered feeling",thCreamM2:"तणाव दूर",thCreamM3:"Luxury",thCreamFor:"Dry skin.",thTilTel:"तीळ तेल मसाज",thTilTelPrice:"₹1,499",thTilTelDur:"60 मिनिटे",thTilTelShort:"पारंपारिक तीळ तेल मालिश.",thTilTelLong:"पारंपारिक आयुर्वेदिक अभ्यंग.",thTilP1:"वात दोष संतुलन",thTilP2:"सांधे मजबूती",thTilP3:"हाडांची घनता",thTilP4:"हिवाळ्यात उष्णता",thTilM1:"Grounding effect",thTilM2:"चिंता कमी",thTilM3:"चांगली झोप",thTilFor:"वृद्ध, हिवाळ्यात.",thPowder:"पावडर मसाज",thPowderPrice:"₹1,299",thPowderDur:"45 मिनिटे",thPowderShort:"Udvartana — detox साठी powder massage.",thPowderLong:"Dry herbal powder ने vigorous massage.",thPowderP1:"Fat reduction",thPowderP2:"Lymphatic drainage",thPowderP3:"Skin exfoliation",thPowderP4:"Cellulite कमी",thPowderM1:"Energized",thPowderM2:"आत्मविश्वास",thPowderM3:"शरीर जाणीव",thPowderFor:"Weight management.",thFacial:"फेशियल",thFacialPrice:"₹999",thFacialDur:"60 मिनिटे",thFacialShort:"चमकदार त्वचेसाठी Ayurvedic facial.",thFacialLong:"Natural herbs ने खोल सफाई.",thFacialP1:"Deep pore cleansing",thFacialP2:"Dead skin removal",thFacialP3:"Natural glow",thFacialP4:"Acne कमी",thFacialM1:"Refreshed",thFacialM2:"Self-care",thFacialFor:"Dull skin.",thBackPain:"पाठदुखी मसाज",thBackPainPrice:"₹999",thBackPainDur:"30 मिनिटे",thBackPainShort:"पाठदुखीपासून त्वरित आराम.",thBackPainLong:"Back muscles, spine ला target करते.",thBackP1:"पाठदुखी आराम",thBackP2:"Muscle spasm कमी",thBackP3:"Spine alignment",thBackP4:"Posture",thBackM1:"शांती",thBackM2:"Concentration",thBackM3:"Work performance",thBackFor:"Office workers.",thLegPain:"पाय दुखणे",thLegPainPrice:"₹999",thLegPainDur:"30 मिनिटे",thLegPainShort:"थकलेल्या पायांसाठी आराम.",thLegPainLong:"Teachers, nurses साठी perfect.",thLegP1:"पाय दुखणे कमी",thLegP2:"सूज कमी",thLegP3:"Blood circulation",thLegP4:"Varicose veins",thLegM1:"थकवा आराम",thLegM2:"Energy boost",thLegFor:"Standing jobs.",thFoot:"पाय मसाज",thFootPrice:"₹499",thFootDur:"20 मिनिटे",thFootShort:"Reflexology foot massage.",thFootLong:"पायांमध्ये pressure points आहेत.",thFootP1:"Reflex आराम",thFootP2:"झोप",thFootP3:"Digestive health",thFootP4:"Headache",thFootM1:"त्वरित विश्रांती",thFootM2:"Mental fatigue कमी",thFootM3:"Mood सुधारतो",thFootFor:"Quick relaxation.",thHead:"हेड मसाज",thHeadPrice:"₹499",thHeadDur:"25 मिनिटे",thHeadShort:"Shiroabhyanga — तणाव आणि केसांसाठी.",thHeadLong:"उष्ण oil ने scalp massage.",thHeadP1:"Migraine आराम",thHeadP2:"Hair fall कमी",thHeadP3:"Scalp health",thHeadP4:"Neck stiffness",thHeadM1:"तणाव आराम",thHeadM2:"Mental clarity",thHeadM3:"Concentration",thHeadM4:"Insomnia",thHeadFor:"Students, professionals."};
+const THERAPY_MR={thSpaPack:"स्पा पॅक",thSpaPackPrice:"₹3,999",thSpaPackDur:"संपूर्ण पॅक",thSpaPackShort:"संपूर्ण वेलनेस: साफसफाई, स्क्रब, स्टीम आणि मालिश.",thSpaPackLong:"Complete wellness journey.",thSpaPackP1:"खोल साफसफाई",thSpaPackP2:"त्वचेची चमक",thSpaPackP3:"स्नायू आराम",thSpaPackP4:"रक्ताभिसरण",thSpaPackM1:"संपूर्ण विश्रांती",thSpaPackM2:"तणावापासून मुक्ती",thSpaPackM3:"ताजेपणा",thSpaPackFor:"संपूर्ण rejuvenation साठी.",thPotli:"पोटली मसाज",thPotliPrice:"₹2,999",thPotliDur:"90 मिनिटे",thPotliShort:"उष्ण औषधी पोटली.",thPotliLong:"Herbal heat.",thPotliP1:"सांधेदुखी",thPotliP2:"कडकपणा कमी",thPotliP3:"रक्ताभिसरण",thPotliP4:"त्वचा पोषण",thPotliM1:"खोल विश्रांती",thPotliM2:"झोप",thPotliM3:"तणाव कमी",thPotliFor:"सांधेदुखी रुग्ण.",thCouple:"कपल मसाज",thCouplePrice:"₹2,699",thCoupleDur:"60 मिनिटे प्रत्येकी",thCoupleShort:"दोघांसाठी वेलनेस.",thCoupleLong:"Side-by-side.",thCoupleP1:"विश्रांती",thCoupleP2:"तणाव दूर",thCoupleP3:"रक्ताभिसरण",thCoupleM1:"भावनिक बंध",thCoupleM2:"खोल विश्रांती",thCoupleM3:"तणावापासून मुक्ती",thCoupleFor:"Couples साठी.",thMedOil:"औषधी तेल मालिश",thMedOilPrice:"₹2,499",thMedOilDur:"75 मिनिटे",thMedOilShort:"Dosha नुसार massage.",thMedOilLong:"Deep tissue healing.",thMedOilP1:"Dosha संतुलन",thMedOilP2:"खोल पोषण",thMedOilP3:"सांधे वंगण",thMedOilP4:"विषारी पदार्थ",thMedOilM1:"संतुलन",thMedOilM2:"स्पष्टता",thMedOilM3:"चिंता कमी",thMedOilFor:"विशिष्ट समस्या.",thDeepTissue:"डीप टिश्यू मसाज",thDeepTissuePrice:"₹2,199",thDeepTissueDur:"70 मिनिटे",thDeepTissueShort:"जुन्या स्नायू तणावासाठी.",thDeepTissueLong:"Chronic tension.",thDeepP1:"तणाव दूर",thDeepP2:"दुखापत बरी",thDeepP3:"मुद्रा",thDeepP4:"रक्तदाब",thDeepM1:"विश्रांती",thDeepM2:"शांती",thDeepM3:"जाणीव",thDeepFor:"Athletes, office workers.",thAloe:"एलोवेरा जेल मसाज",thAloePrice:"₹1,999",thAloeDur:"60 मिनिटे",thAloeShort:"Cooling massage.",thAloeLong:"Deep hydration.",thAloeP1:"Hydration",thAloeP2:"जळजळ कमी",thAloeP3:"Sunburn",thAloeP4:"त्वचा",thAloeM1:"Cooling",thAloeM2:"विश्रांती",thAloeM3:"आत्मविश्वास",thAloeFor:"कोरडी त्वचा.",thCream:"क्रीम मसाज",thCreamPrice:"₹1,799",thCreamDur:"60 मिनिटे",thCreamShort:"Cream massage.",thCreamLong:"Moisturizing.",thCreamP1:"Moisturization",thCreamP2:"मुलायम त्वचा",thCreamP3:"Cell renewal",thCreamP4:"दुखणे कमी",thCreamM1:"Pampered",thCreamM2:"तणाव दूर",thCreamM3:"Luxury",thCreamFor:"Dry skin.",thTilTel:"तीळ तेल मसाज",thTilTelPrice:"₹1,499",thTilTelDur:"60 मिनिटे",thTilTelShort:"पारंपारिक तीळ तेल.",thTilTelLong:"Abhyanga.",thTilP1:"Vata संतुलन",thTilP2:"सांधे",thTilP3:"हाडे",thTilP4:"उष्णता",thTilM1:"Grounding",thTilM2:"चिंता कमी",thTilM3:"झोप",thTilFor:"वृद्ध, हिवाळा.",thPowder:"पावडर मसाज",thPowderPrice:"₹1,299",thPowderDur:"45 मिनिटे",thPowderShort:"Udvartana.",thPowderLong:"Herbal powder.",thPowderP1:"Fat reduction",thPowderP2:"Lymphatic",thPowderP3:"Exfoliation",thPowderP4:"Cellulite",thPowderM1:"Energized",thPowderM2:"आत्मविश्वास",thPowderM3:"जाणीव",thPowderFor:"Weight management.",thFacial:"फेशियल",thFacialPrice:"₹999",thFacialDur:"60 मिनिटे",thFacialShort:"Ayurvedic facial.",thFacialLong:"Deep cleanse.",thFacialP1:"Pore cleansing",thFacialP2:"Dead skin",thFacialP3:"Glow",thFacialP4:"Acne",thFacialM1:"Refreshed",thFacialM2:"Self-care",thFacialFor:"Dull skin.",thBackPain:"पाठदुखी मसाज",thBackPainPrice:"₹999",thBackPainDur:"30 मिनिटे",thBackPainShort:"पाठदुखी आराम.",thBackPainLong:"Back muscles.",thBackP1:"आराम",thBackP2:"Spasm",thBackP3:"Spine",thBackP4:"Posture",thBackM1:"शांती",thBackM2:"Concentration",thBackM3:"Performance",thBackFor:"Office workers.",thLegPain:"पाय दुखणे",thLegPainPrice:"₹999",thLegPainDur:"30 मिनिटे",thLegPainShort:"थकलेल्या पायांसाठी.",thLegPainLong:"Standing jobs.",thLegP1:"दुखणे कमी",thLegP2:"सूज कमी",thLegP3:"Circulation",thLegP4:"Varicose",thLegM1:"थकवा",thLegM2:"Energy",thLegFor:"Standing jobs.",thFoot:"पाय मसाज",thFootPrice:"₹499",thFootDur:"20 मिनिटे",thFootShort:"Reflexology.",thFootLong:"Pressure points.",thFootP1:"Reflex",thFootP2:"झोप",thFootP3:"Digestive",thFootP4:"Headache",thFootM1:"विश्रांती",thFootM2:"Fatigue",thFootM3:"Mood",thFootFor:"Quick relaxation.",thHead:"हेड मसाज",thHeadPrice:"₹499",thHeadDur:"25 मिनिटे",thHeadShort:"Shiroabhyanga.",thHeadLong:"Scalp massage.",thHeadP1:"Migraine",thHeadP2:"Hair fall",thHeadP3:"Scalp",thHeadP4:"Neck",thHeadM1:"तणाव आराम",thHeadM2:"Clarity",thHeadM3:"Concentration",thHeadM4:"Insomnia",thHeadFor:"Students, professionals."};
 
 function getTherapyText(key){
   if(currentLang==='hi') return THERAPY_HI[key]||THERAPY_EN[key]||key;
@@ -733,55 +578,76 @@ let lbImages=[], lbIdx=0;
 let tmCarouselIdx=0, tmCarouselEl=null, tmCarouselDots=[];
 let currentJobType='salaried';
 
-/* ── SAVINGS CALCULATOR ─────────────────────────────────── */
+/* ── PLAN CONFIG ─────────────────────────────────────────── */
 const PLAN_CONFIG={
   silver:{discount:0.05,sessions:1,label:'Silver Member'},
   gold:{discount:0.15,sessions:2,label:'Gold Member'},
   platinum:{discount:0.25,sessions:4,label:'Platinum Member'}
 };
 
+/* ── SAVINGS CALCULATOR (FULLY UPGRADED — injects actual prices into cards) ── */
 function updateCalc(){
-  const therapyVal=parseInt(document.getElementById('calcTherapy')?.value||2199);
-  const planKey=document.getElementById('calcPlan')?.value||'gold';
-  const plan=PLAN_CONFIG[planKey];
-  const sessionsPerYear=plan.sessions*12;
-  const memberPrice=Math.round(therapyVal*(1-plan.discount));
-  const normalAnnual=therapyVal*sessionsPerYear;
-  const memberAnnual=memberPrice*sessionsPerYear;
-  const annualSaving=normalAnnual-memberAnnual;
+  var therapyVal=parseInt(document.getElementById('calcTherapy')?document.getElementById('calcTherapy').value:2199)||2199;
+  var planKey=document.getElementById('calcPlan')?document.getElementById('calcPlan').value:'gold';
+  var plan=PLAN_CONFIG[planKey];
+  var sessionsPerYear=plan.sessions*12;
+  var memberPrice=Math.round(therapyVal*(1-plan.discount));
+  var normalAnnual=therapyVal*sessionsPerYear;
+  var memberAnnual=memberPrice*sessionsPerYear;
+  var annualSaving=normalAnnual-memberAnnual;
 
-  const fmt=n=>new Intl.NumberFormat('en-IN').format(n);
+  function fmt(n){return new Intl.NumberFormat('en-IN').format(n);}
 
-  // Update main calc display
-  setEl('calcNormalPrice',`₹${fmt(therapyVal)}/session`);
-  setEl('calcNormalAnnual',`₹${fmt(normalAnnual)}/year (${sessionsPerYear} sessions)`);
+  /* Update main calculator display */
+  setEl('calcNormalPrice','₹'+fmt(therapyVal)+'/session');
+  setEl('calcNormalAnnual','₹'+fmt(normalAnnual)+'/year ('+sessionsPerYear+' sessions)');
   setEl('calcMemberLabel',plan.label);
-  setEl('calcMemberPrice',`₹${fmt(memberPrice)}/session`);
-  setEl('calcMemberAnnual',`₹${fmt(memberAnnual)}/year`);
-  setEl('calcAnnualSaving',`₹${fmt(annualSaving)}`);
-  setEl('calcDiscountPct',`${Math.round(plan.discount*100)}% off per session`);
+  setEl('calcMemberPrice','₹'+fmt(memberPrice)+'/session');
+  setEl('calcMemberAnnual','₹'+fmt(memberAnnual)+'/year');
+  setEl('calcAnnualSaving','₹'+fmt(annualSaving));
+  setEl('calcDiscountPct',Math.round(plan.discount*100)+'% off per session');
 
-  // Update each plan card saving tag
-  ['silver','gold','platinum'].forEach(pk=>{
-    const p=PLAN_CONFIG[pk];
-    const mp=Math.round(therapyVal*(1-p.discount));
-    const saving=therapyVal-mp;
-    const el=document.getElementById(pk+'CalcSaving');
-    if(el){
-      el.innerHTML=`💰 Save ₹${fmt(saving)}/session with ${pk.charAt(0).toUpperCase()+pk.slice(1)}`;
-      el.style.display='block';
-    }
-    // Highlight the selected plan card
-    const card=document.getElementById('plan'+pk.charAt(0).toUpperCase()+pk.slice(1)+'Card');
+  /* Get selected therapy name */
+  var therapySelect=document.getElementById('calcTherapy');
+  var therapyName=therapySelect?therapySelect.options[therapySelect.selectedIndex].text.split('—')[0].trim():'Selected Therapy';
+
+  /* Inject actual price row into each plan card */
+  var cardMap={silver:'planSilverCard',gold:'planGoldCard',platinum:'planPlatCard'};
+  Object.keys(PLAN_CONFIG).forEach(function(pk){
+    var p=PLAN_CONFIG[pk];
+    var mp=Math.round(therapyVal*(1-p.discount));
+    var saving=therapyVal-mp;
+
+    /* Highlight selected plan card */
+    var card=document.getElementById(cardMap[pk]);
     if(card) card.classList.toggle('calc-selected',pk===planKey);
+
+    /* Build price row HTML */
+    var rowId=pk+'ActualPriceRow';
+    var rowHTML='<div class="plan-actual-price-row" id="'+rowId+'">'
+      +'<div class="par-therapy-name">'+therapyName+' per session</div>'
+      +'<div class="par-price-line">'
+        +'<span class="par-normal">₹'+fmt(therapyVal)+'</span>'
+        +'<span class="par-member">₹'+fmt(mp)+'</span>'
+        +'<span class="par-saving-badge">Save ₹'+fmt(saving)+'</span>'
+      +'</div>'
+    +'</div>';
+
+    /* Insert or replace row */
+    var existing=document.getElementById(rowId);
+    if(existing){
+      existing.outerHTML=rowHTML;
+    } else if(card){
+      var joinBtn=card.querySelector('button.btn-gold,button.btn-outline');
+      if(joinBtn) joinBtn.insertAdjacentHTML('beforebegin',rowHTML);
+    }
   });
 }
 
-function setEl(id,val){const e=document.getElementById(id);if(e)e.textContent=val;}
+function setEl(id,val){var e=document.getElementById(id);if(e)e.textContent=val;}
 
 /* ── INIT ─────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded',function(){
-  // Hide site loader
   setTimeout(()=>{
     const loader=document.getElementById('siteLoader');
     if(loader){loader.style.opacity='0';setTimeout(()=>loader.style.display='none',400);}
@@ -817,7 +683,6 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 
 function hideTeamSkeletons(){
-  // Hide team skeletons after a short delay (bg-images load fast)
   setTimeout(()=>{
     ['ti1','ti2','ti3','ti4','ti5'].forEach(id=>{
       const el=document.getElementById(id);
@@ -858,7 +723,7 @@ function toggleLangMenu(){var m=document.getElementById('langMenu');if(m)m.class
 function closeLangMenu(){var m=document.getElementById('langMenu');if(m)m.classList.remove('open');}
 document.addEventListener('click',e=>{if(!e.target.closest('#langWrap'))closeLangMenu();});
 
-/* ── LEGAL RENDERING (multilingual) ─────────────────────── */
+/* ── LEGAL ───────────────────────────────────────────────── */
 function getLegalContent(type){
   if(type==='terms'){
     if(currentLang==='hi') return TERMS_HI;
@@ -881,7 +746,7 @@ function openLegalPopup(type){
   if(!content) return;
   const title=type==='terms'?t('termsH1'):t('privacyH1');
   const body=getLegalContent(type);
-  content.innerHTML=`<h2 style="font-family:var(--fd);color:var(--green);margin-bottom:16px">${title}</h2><p style="font-size:.82rem;color:#888;margin-bottom:24px;font-style:italic;">${t('legalUpdated')}</p><div class="legal-page">${body}</div>`;
+  content.innerHTML='<h2 style="font-family:var(--fd);color:var(--green);margin-bottom:16px">'+title+'</h2><p style="font-size:.82rem;color:#888;margin-bottom:24px;font-style:italic;">'+t('legalUpdated')+'</p><div class="legal-page">'+body+'</div>';
   const modal=document.getElementById('legalPopupModal');
   if(modal){modal.classList.add('show');document.body.style.overflow='hidden';}
 }
@@ -926,7 +791,6 @@ function navTo(page){
   if(nav) nav.classList.remove('mobile-open');
   if(hb) hb.classList.remove('open');
   document.querySelectorAll('.nl').forEach(a=>a.classList.toggle('active',a.getAttribute('data-page')===page));
-  // Re-trigger calculator if going to membership
   if(page==='membership') updateCalc();
 }
 window.addEventListener('popstate',()=>{
@@ -956,7 +820,7 @@ function initScrollEffects(){
   const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';io.unobserve(e.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.why-card,.benefit-card,.plan-card,.more-feature-card,.mq-card').forEach((el,i)=>{
     el.style.opacity='0';el.style.transform='translateY(28px)';
-    el.style.transition=`opacity .5s ${i*.07}s ease,transform .5s ${i*.07}s ease`;
+    el.style.transition='opacity .5s '+(i*.07)+'s ease,transform .5s '+(i*.07)+'s ease';
     io.observe(el);
   });
 }
@@ -973,21 +837,21 @@ function renderTherapyCards(){
     const price=getTherapyText(th.priceKey);
     const dur=getTherapyText(th.durKey);
     const short=getTherapyText(th.shortKey);
-    return `<div class="tc" tabindex="0" aria-label="${name}">
-      <div class="tc-media">
-        <img src="${th.imgs[0]}" alt="${name}" loading="lazy" class="tc-img">
-        <video class="tc-stroke-video" muted loop playsinline preload="none"><source src="${th.videoSrc}" type="video/mp4"></video>
-        <div class="tc-overlay-btn"><button class="tc-see-more" onclick="openTherapyModal(${i});event.stopPropagation()"><i class="fas fa-eye"></i> ${seeMoreTxt}</button></div>
-      </div>
-      <div class="tc-body">
-        <h3>${name}</h3><p>${short}</p>
-        <div class="tc-meta"><span class="tc-price">${price}</span><span class="tc-dur"><i class="fas fa-clock"></i> ${dur}</span></div>
-        <div class="tc-btns">
-          <button class="btn-gold btn-sm" onclick="navTo('contact')">${bookNowTxt}</button>
-          <button class="btn-outline btn-sm" onclick="openTherapyModal(${i})">${seeMoreTxt}</button>
-        </div>
-      </div>
-    </div>`;
+    return '<div class="tc" tabindex="0" aria-label="'+name+'">'
+      +'<div class="tc-media">'
+        +'<img src="'+th.imgs[0]+'" alt="'+name+'" loading="lazy" class="tc-img">'
+        +'<video class="tc-stroke-video" muted loop playsinline preload="none"><source src="'+th.videoSrc+'" type="video/mp4"></video>'
+        +'<div class="tc-overlay-btn"><button class="tc-see-more" onclick="openTherapyModal('+i+');event.stopPropagation()"><i class="fas fa-eye"></i> '+seeMoreTxt+'</button></div>'
+      +'</div>'
+      +'<div class="tc-body">'
+        +'<h3>'+name+'</h3><p>'+short+'</p>'
+        +'<div class="tc-meta"><span class="tc-price">'+price+'</span><span class="tc-dur"><i class="fas fa-clock"></i> '+dur+'</span></div>'
+        +'<div class="tc-btns">'
+          +'<button class="btn-gold btn-sm" onclick="navTo(\'contact\')">'+bookNowTxt+'</button>'
+          +'<button class="btn-outline btn-sm" onclick="openTherapyModal('+i+')">'+seeMoreTxt+'</button>'
+        +'</div>'
+      +'</div>'
+    +'</div>';
   }).join('');
 
   grid.querySelectorAll('.tc').forEach((card,i)=>{
@@ -1013,24 +877,24 @@ function openTherapyModal(idx){
   const physLabel=currentLang==='hi'?'शारीरिक लाभ':currentLang==='mr'?'शारीरिक फायदे':'Physical Benefits';
   const mentLabel=currentLang==='hi'?'मानसिक लाभ':currentLang==='mr'?'मानसिक फायदे':'Mental Benefits';
   const forLabel=currentLang==='hi'?'किसके लिए?':currentLang==='mr'?'कोणासाठी?':'Who is it for?';
-  const dotHtml=th.imgs.map((_,i)=>`<span class="tmc-dot${i===0?' active':''}" onclick="tmGoTo(${i})"></span>`).join('');
-  const slideHtml=th.imgs.map((src,si)=>`<div class="tm-slide" style="min-width:100%;width:100%;"><img src="${src}" alt="${name} ${si+1}" loading="${si===0?'eager':'lazy'}" style="width:100%;height:100%;object-fit:cover;display:block;"></div>`).join('');
-  content.innerHTML=`
-    <div class="tm-name">${name}</div>
-    <div class="tm-meta"><span class="tm-price">${price}</span><span class="tm-dur"><i class="fas fa-clock"></i> ${dur}</span></div>
-    <div class="tm-carousel" style="position:relative;width:100%;overflow:hidden;border-radius:14px;aspect-ratio:16/9;margin-bottom:12px;background:#111;">
-      <div class="tm-carousel-track" id="tmTrack" style="display:flex;width:100%;height:100%;transition:transform .45s ease;">${slideHtml}</div>
-      <button class="tm-carousel-prev" onclick="tmNav(-1)" aria-label="Previous" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,.55);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;"><i class="fas fa-chevron-left"></i></button>
-      <button class="tm-carousel-next" onclick="tmNav(1)" aria-label="Next" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,.55);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;"><i class="fas fa-chevron-right"></i></button>
-    </div>
-    <div style="display:flex;justify-content:center;gap:6px;margin-bottom:16px;">${dotHtml}</div>
-    <p class="tm-desc">${long}</p>
-    <div class="tm-benefits">
-      <h4>${physLabel}</h4><ul>${phys.map(b=>`<li><i class="fas fa-check-circle"></i> ${b}</li>`).join('')}</ul>
-      <h4>${mentLabel}</h4><ul>${ment.map(b=>`<li><i class="fas fa-check-circle"></i> ${b}</li>`).join('')}</ul>
-      <h4>${forLabel}</h4><p class="for-whom">${forWhom}</p>
-    </div>
-    <button class="btn-gold btn-full" style="margin-top:20px" onclick="navTo('contact');closeTherapyModal()">${t('bookNow')||'Book Now'} — ${price}</button>`;
+  const dotHtml=th.imgs.map((_,i)=>'<span class="tmc-dot'+(i===0?' active':'')+'" onclick="tmGoTo('+i+')"></span>').join('');
+  const slideHtml=th.imgs.map((src,si)=>'<div class="tm-slide" style="min-width:100%;width:100%;"><img src="'+src+'" alt="'+name+' '+(si+1)+'" loading="'+(si===0?'eager':'lazy')+'" style="width:100%;height:100%;object-fit:cover;display:block;"></div>').join('');
+  content.innerHTML=
+    '<div class="tm-name">'+name+'</div>'
+    +'<div class="tm-meta"><span class="tm-price">'+price+'</span><span class="tm-dur"><i class="fas fa-clock"></i> '+dur+'</span></div>'
+    +'<div class="tm-carousel" style="position:relative;width:100%;overflow:hidden;border-radius:14px;aspect-ratio:16/9;margin-bottom:12px;background:#111;">'
+      +'<div class="tm-carousel-track" id="tmTrack" style="display:flex;width:100%;height:100%;transition:transform .45s ease;">'+slideHtml+'</div>'
+      +'<button class="tm-carousel-prev" onclick="tmNav(-1)" aria-label="Previous" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,.55);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;"><i class="fas fa-chevron-left"></i></button>'
+      +'<button class="tm-carousel-next" onclick="tmNav(1)" aria-label="Next" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:10;background:rgba(0,0,0,.55);color:#fff;border:none;width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;"><i class="fas fa-chevron-right"></i></button>'
+    +'</div>'
+    +'<div style="display:flex;justify-content:center;gap:6px;margin-bottom:16px;">'+dotHtml+'</div>'
+    +'<p class="tm-desc">'+long+'</p>'
+    +'<div class="tm-benefits">'
+      +'<h4>'+physLabel+'</h4><ul>'+phys.map(b=>'<li><i class="fas fa-check-circle"></i> '+b+'</li>').join('')+'</ul>'
+      +'<h4>'+mentLabel+'</h4><ul>'+ment.map(b=>'<li><i class="fas fa-check-circle"></i> '+b+'</li>').join('')+'</ul>'
+      +'<h4>'+forLabel+'</h4><p class="for-whom">'+forWhom+'</p>'
+    +'</div>'
+    +'<button class="btn-gold btn-full" style="margin-top:20px" onclick="navTo(\'contact\');closeTherapyModal()">'+(t('bookNow')||'Book Now')+' — '+price+'</button>';
   tmCarouselEl=document.getElementById('tmTrack');
   tmCarouselDots=Array.from(document.querySelectorAll('.tmc-dot'));
   let tsX=0;
@@ -1046,18 +910,18 @@ function tmNav(dir){
   const track=document.getElementById('tmTrack');
   const slideCount=track?track.children.length:6;
   tmCarouselIdx=(tmCarouselIdx+dir+slideCount)%slideCount;
-  if(tmCarouselEl) tmCarouselEl.style.transform=`translateX(-${tmCarouselIdx*100}%)`;
+  if(tmCarouselEl) tmCarouselEl.style.transform='translateX(-'+tmCarouselIdx*100+'%)';
   tmCarouselDots=Array.from(document.querySelectorAll('.tmc-dot'));
   tmCarouselDots.forEach((d,i)=>d.classList.toggle('active',i===tmCarouselIdx));
 }
-function tmGoTo(i){tmCarouselIdx=i;if(tmCarouselEl)tmCarouselEl.style.transform=`translateX(-${i*100}%)`;tmCarouselDots=Array.from(document.querySelectorAll('.tmc-dot'));tmCarouselDots.forEach((d,j)=>d.classList.toggle('active',j===i));}
+function tmGoTo(i){tmCarouselIdx=i;if(tmCarouselEl)tmCarouselEl.style.transform='translateX(-'+i*100+'%)';tmCarouselDots=Array.from(document.querySelectorAll('.tmc-dot'));tmCarouselDots.forEach((d,j)=>d.classList.toggle('active',j===i));}
 function closeTherapyModal(){var tm=document.getElementById('therapyModal');if(tm)tm.classList.remove('show');document.body.style.overflow='';if(window._tmInterval)clearInterval(window._tmInterval);}
 
 /* ── BENEFIT MODAL ───────────────────────────────────────── */
 function openBenefitModal(key){
   const b=BENEFITS[key];if(!b) return;
   const content=document.getElementById('benefitModalContent');if(!content) return;
-  content.innerHTML=`<img class="bm-img" src="${b.img}" alt="${b.title}" style="width:100%;border-radius:12px;margin-bottom:16px"><div class="bm-title" style="font-size:1.3rem;font-weight:700;margin-bottom:10px">${b.title}</div><p style="color:var(--text2);line-height:1.8;font-size:.95rem;margin-bottom:16px">${b.desc}</p><div class="bm-gallery" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">${b.gallery.map(src=>`<img src="${src}" alt="${b.title}" loading="lazy" style="width:100%;border-radius:8px;aspect-ratio:3/2;object-fit:cover">`).join('')}</div><button class="btn-gold" style="width:100%" onclick="navTo('contact');closeBenefitModal()">${t('bookNow')||'Book a Session'}</button>`;
+  content.innerHTML='<img class="bm-img" src="'+b.img+'" alt="'+b.title+'" style="width:100%;border-radius:12px;margin-bottom:16px"><div class="bm-title" style="font-size:1.3rem;font-weight:700;margin-bottom:10px">'+b.title+'</div><p style="color:var(--text2);line-height:1.8;font-size:.95rem;margin-bottom:16px">'+b.desc+'</p><div class="bm-gallery" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px">'+b.gallery.map(src=>'<img src="'+src+'" alt="'+b.title+'" loading="lazy" style="width:100%;border-radius:8px;aspect-ratio:3/2;object-fit:cover">').join('')+'</div><button class="btn-gold" style="width:100%" onclick="navTo(\'contact\');closeBenefitModal()">'+(t('bookNow')||'Book a Session')+'</button>';
   var bm=document.getElementById('benefitModal');if(bm){bm.classList.add('show');document.body.style.overflow='hidden';}
 }
 function closeBenefitModal(){var bm=document.getElementById('benefitModal');if(bm)bm.classList.remove('show');document.body.style.overflow='';}
@@ -1068,13 +932,13 @@ function renderGallery(){
   const skel=document.getElementById('gallerySkeletonGrid');
   if(!grid) return;
   lbImages=GALLERY_IMGS;
-  grid.innerHTML=GALLERY_IMGS.map((img,i)=>`<div class="masonry-item" onclick="openLightbox(${i})" tabindex="0" role="button" aria-label="${img.alt}"><img src="${img.src}" alt="${img.alt}" loading="lazy"><div class="masonry-item-ov"><i class="fas fa-expand-alt"></i></div></div>`).join('');
+  grid.innerHTML=GALLERY_IMGS.map((img,i)=>'<div class="masonry-item" onclick="openLightbox('+i+')" tabindex="0" role="button" aria-label="'+img.alt+'"><img src="'+img.src+'" alt="'+img.alt+'" loading="lazy"><div class="masonry-item-ov"><i class="fas fa-expand-alt"></i></div></div>').join('');
   if(skel) skel.style.display='none';
   grid.style.display='block';
 }
-function openLightbox(idx){lbIdx=idx;const img=document.getElementById('lbImg');const ctr=document.getElementById('lbCounter');if(img)img.src=lbImages[idx].src;if(ctr)ctr.textContent=`${idx+1} / ${lbImages.length}`;var lb=document.getElementById('lightbox');if(lb){lb.classList.add('show');document.body.style.overflow='hidden';}}
+function openLightbox(idx){lbIdx=idx;const img=document.getElementById('lbImg');const ctr=document.getElementById('lbCounter');if(img)img.src=lbImages[idx].src;if(ctr)ctr.textContent=(idx+1)+' / '+lbImages.length;var lb=document.getElementById('lightbox');if(lb){lb.classList.add('show');document.body.style.overflow='hidden';}}
 function closeLightbox(){var lb=document.getElementById('lightbox');if(lb)lb.classList.remove('show');document.body.style.overflow='';}
-function lbNav(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;const img=document.getElementById('lbImg');if(img){img.style.opacity='0';setTimeout(()=>{img.src=lbImages[lbIdx].src;img.style.opacity='1';img.style.transition='opacity .3s';},120);}const ctr=document.getElementById('lbCounter');if(ctr)ctr.textContent=`${lbIdx+1} / ${lbImages.length}`;}
+function lbNav(dir){lbIdx=(lbIdx+dir+lbImages.length)%lbImages.length;const img=document.getElementById('lbImg');if(img){img.style.opacity='0';setTimeout(()=>{img.src=lbImages[lbIdx].src;img.style.opacity='1';img.style.transition='opacity .3s';},120);}const ctr=document.getElementById('lbCounter');if(ctr)ctr.textContent=(lbIdx+1)+' / '+lbImages.length;}
 
 /* ── FAQ ─────────────────────────────────────────────────── */
 function toggleFaq(btn){
@@ -1103,10 +967,10 @@ function submitContactForm(){
   const date=document.getElementById('fDate')?.value||'';
   const time=document.getElementById('fTime')?.value||'';
   const msg=document.getElementById('fMsg')?.value||'';
-  const waMsg=encodeURIComponent(`Namaskar! Mauli Spa booking.\n\n👤 Name: ${name}\n📱 Phone: ${phone}\n🪪 ID Proof: ${idProof}\n💆 Service: ${service||'TBD'}\n📅 Date: ${date||'Flexible'}\n⏰ Time: ${time}\n💬 Message: ${msg||'None'}\n✅ T&C Accepted: Yes\n\nPlease confirm. Thank you! 🙏`);
+  const waMsg=encodeURIComponent('Namaskar! Mauli Spa booking.\n\n👤 Name: '+name+'\n📱 Phone: '+phone+'\n🪪 ID Proof: '+idProof+'\n💆 Service: '+(service||'TBD')+'\n📅 Date: '+(date||'Flexible')+'\n⏰ Time: '+time+'\n💬 Message: '+(msg||'None')+'\n✅ T&C Accepted: Yes\n\nPlease confirm. Thank you! 🙏');
   const fw=document.getElementById('contactFormWrap');const fs=document.getElementById('formSuccess');
   if(fw)fw.style.display='none';if(fs)fs.style.display='block';
-  setTimeout(()=>window.open(`https://wa.me/919307360513?text=${waMsg}`,'_blank'),900);
+  setTimeout(()=>window.open('https://wa.me/919307360513?text='+waMsg,'_blank'),900);
 }
 function showErr(id,msg){
   const el=document.getElementById(id);if(!el) return;
@@ -1131,29 +995,29 @@ function submitRefer(){
   const n=document.getElementById('referName')?.value.trim();const p=document.getElementById('referPhone')?.value.trim();
   if(!n||!p){alert('Please fill all fields');return;}
   const fn=document.getElementById('friendName')?.value.trim()||'';const fp=document.getElementById('friendPhone')?.value.trim()||'';
-  const waMsg=encodeURIComponent(`Referral Request!\n👤 My Name: ${n}\n📱 My Phone: ${p}\n👥 Friend Name: ${fn}\n📱 Friend Phone: ${fp}\n\nPlease process our referral discount. Thank you!`);
-  window.open(`https://wa.me/919307360513?text=${waMsg}`,'_blank');closeModal('referModal');
+  const waMsg=encodeURIComponent('Referral Request!\n👤 My Name: '+n+'\n📱 My Phone: '+p+'\n👥 Friend Name: '+fn+'\n📱 Friend Phone: '+fp+'\n\nPlease process our referral discount. Thank you!');
+  window.open('https://wa.me/919307360513?text='+waMsg,'_blank');closeModal('referModal');
 }
 function submitJob(){
   const n=document.getElementById('jobName')?.value.trim();const p=document.getElementById('jobPhone')?.value.trim();
   if(!n||!p){alert('Please fill required fields');return;}
   const e=document.getElementById('jobEmail')?.value||'';const exp=document.getElementById('jobExp')?.value||'';const about=document.getElementById('jobAbout')?.value||'';
-  const waMsg=encodeURIComponent(`Job Application — ${currentJobType.toUpperCase()}\n👤 Name: ${n}\n📱 Phone: ${p}\n📧 Email: ${e}\n⏳ Experience: ${exp} years\n📝 About: ${about}`);
-  window.open(`https://wa.me/919307360513?text=${waMsg}`,'_blank');closeModal('jobModal');
+  const waMsg=encodeURIComponent('Job Application — '+currentJobType.toUpperCase()+'\n👤 Name: '+n+'\n📱 Phone: '+p+'\n📧 Email: '+e+'\n⏳ Experience: '+exp+' years\n📝 About: '+about);
+  window.open('https://wa.me/919307360513?text='+waMsg,'_blank');closeModal('jobModal');
 }
 function submitLearn(){
   const n=document.getElementById('learnName')?.value.trim();const p=document.getElementById('learnPhone')?.value.trim();const c=document.getElementById('learnCourse')?.value||'';
   if(!n||!p){alert('Please fill required fields');return;}
-  const waMsg=encodeURIComponent(`Learning Enrollment\n👤 Name: ${n}\n📱 Phone: ${p}\n📚 Course: ${c}`);
-  window.open(`https://wa.me/919307360513?text=${waMsg}`,'_blank');closeModal('learnModal');
+  const waMsg=encodeURIComponent('Learning Enrollment\n👤 Name: '+n+'\n📱 Phone: '+p+'\n📚 Course: '+c);
+  window.open('https://wa.me/919307360513?text='+waMsg,'_blank');closeModal('learnModal');
 }
 
 /* ── NEWSLETTER ─────────────────────────────────────────── */
 function subscribeNewsletter(){
   const inp=document.getElementById('nlEmail');
   if(!inp||!inp.value.includes('@')){if(inp){inp.style.borderColor='#FC8181';inp.placeholder='Valid email!';}return;}
-  const waMsg=encodeURIComponent(`Newsletter Subscription!\n📧 Email: ${inp.value}`);
-  window.open(`https://wa.me/919307360513?text=${waMsg}`,'_blank');
+  const waMsg=encodeURIComponent('Newsletter Subscription!\n📧 Email: '+inp.value);
+  window.open('https://wa.me/919307360513?text='+waMsg,'_blank');
   inp.value='';inp.placeholder='Subscribed! ✓';
 }
 

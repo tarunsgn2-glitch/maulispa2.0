@@ -18,6 +18,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&family=Noto+Sans+Devanagari:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="style.css">
+<!-- FIX PATCH: Add after style.css -->
+<link rel="stylesheet" href="style_fixes.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"DaySpa","name":"Mauli Spa","description":"Best Ayurvedic Massage Therapy in Pune","url":"https://www.maulispa.com","telephone":"+919307360513","address":{"@type":"PostalAddress","streetAddress":"Shop No 112, First Floor, The Business Hub, Karve Rd","addressLocality":"Kothrud","addressRegion":"Maharashtra","postalCode":"411038","addressCountry":"IN"},"openingHours":"Mo-Su 10:00-21:00","priceRange":"₹₹"}</script>
 </head>
 <body>
@@ -277,6 +279,8 @@
   </div>
   <div class="container" style="padding:60px 20px">
     <div class="social-section-header" data-i18n="followUs">Follow Us On Social Media</div>
+
+    <!-- FIX 4: social-strip — soc-btn ab full width cover karega desktop par -->
     <div class="social-strip">
       <a href="https://instagram.com/maulispa" target="_blank" class="soc-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
       <a href="https://facebook.com/@maulispa" target="_blank" class="soc-btn facebook"><i class="fab fa-facebook"></i> Facebook</a>
@@ -284,6 +288,7 @@
       <a href="https://wa.me/919307360513" target="_blank" class="soc-btn whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
       <a href="https://share.google/SUFFG6sbTxTEp1xLA" target="_blank" class="soc-btn gmaps"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
     </div>
+
     <div class="virtual-tour-wrap">
       <h3 class="sec-h2" data-i18n="virtualTour">Virtual Tour</h3>
       <div class="vt-video">
@@ -321,7 +326,7 @@
       <strong data-i18n="limitedOffer">LIMITED OFFER:</strong>&nbsp;<span data-i18n="limitedOfferDesc">First 50 members get a FREE Facial upon joining!</span>
     </div>
 
-    <!-- ═══ SMART SAVINGS CALCULATOR ═══ -->
+    <!-- SMART SAVINGS CALCULATOR -->
     <div class="savings-calc">
       <h3 data-i18n="savingsCalc">Smart Savings Calculator</h3>
       <p class="calc-sub" data-i18n="calcSubtitle">Choose your massage &amp; membership plan to see exact savings</p>
@@ -356,7 +361,7 @@
         </div>
         <div class="sc-arrow">→</div>
         <div class="sc-box green">
-          <span id="calcMemberLabel" data-i18n="memberPrice">Gold Member</span>
+          <span id="calcMemberLabel">Gold Member</span>
           <strong id="calcMemberPrice">₹1,868/session</strong>
           <small id="calcMemberAnnual" style="display:block;font-size:.75rem;color:#2D7A3A;margin-top:3px">₹44,832/year</small>
         </div>
@@ -368,10 +373,16 @@
       </div>
     </div>
 
-    <!-- PLAN CARDS — highlighted by calculator selection -->
+    <!-- FIX 3: PLAN CARDS — actual per-session price injected by script_patch.js -->
+    <!-- id="planSilverCard", id="planGoldCard", id="planPlatCard" se JS card identify karta hai -->
     <div class="plans-grid">
+
+      <!-- SILVER -->
       <div class="plan-card" id="planSilverCard">
-        <div class="plan-header"><h3 data-i18n="planSilver">Silver</h3><div class="plan-price">₹2,089<span>/mo</span></div></div>
+        <div class="plan-header">
+          <h3 data-i18n="planSilver">Silver</h3>
+          <div class="plan-price">₹2,089<span>/mo</span></div>
+        </div>
         <ul class="plan-feats">
           <li><i class="fas fa-check"></i> <span data-i18n="silver1">1 Session / month</span></li>
           <li><i class="fas fa-check"></i> <span data-i18n="silver2">5% Off extra sessions</span></li>
@@ -379,12 +390,17 @@
           <li class="no"><i class="fas fa-times"></i> <span data-i18n="silver4">Priority Support</span></li>
           <li class="no"><i class="fas fa-times"></i> <span data-i18n="silver5">Extended Duration</span></li>
         </ul>
-        <div class="plan-calc-saving" id="silverCalcSaving"></div>
+        <!-- JS will inject actual price row here, before this button -->
         <button class="btn-outline" onclick="navTo('contact')" data-i18n="joinSilver">Join Silver</button>
       </div>
+
+      <!-- GOLD -->
       <div class="plan-card bestseller" id="planGoldCard">
         <div class="plan-badge">⭐ <span data-i18n="bestSeller">Best Seller</span></div>
-        <div class="plan-header"><h3 data-i18n="planGold">Gold</h3><div class="plan-price">₹3,738<span>/mo</span></div></div>
+        <div class="plan-header">
+          <h3 data-i18n="planGold">Gold</h3>
+          <div class="plan-price">₹3,738<span>/mo</span></div>
+        </div>
         <ul class="plan-feats">
           <li><i class="fas fa-check"></i> <span data-i18n="gold1">2 Sessions / month</span></li>
           <li><i class="fas fa-check"></i> <span data-i18n="gold2">15% Off extra sessions</span></li>
@@ -392,11 +408,16 @@
           <li><i class="fas fa-check"></i> <span data-i18n="gold4">Priority Support</span></li>
           <li><i class="fas fa-check"></i> <span data-i18n="gold5">30 days validity</span></li>
         </ul>
-        <div class="plan-calc-saving" id="goldCalcSaving"></div>
+        <!-- JS will inject actual price row here, before this button -->
         <button class="btn-gold" onclick="navTo('contact')" data-i18n="joinGold">Join Gold</button>
       </div>
+
+      <!-- PLATINUM -->
       <div class="plan-card platinum" id="planPlatCard">
-        <div class="plan-header"><h3 data-i18n="planPlatinum">Platinum</h3><div class="plan-price">₹6,597<span>/mo</span></div></div>
+        <div class="plan-header">
+          <h3 data-i18n="planPlatinum">Platinum</h3>
+          <div class="plan-price">₹6,597<span>/mo</span></div>
+        </div>
         <ul class="plan-feats">
           <li><i class="fas fa-check"></i> <span data-i18n="plat1">4 Sessions / month</span></li>
           <li><i class="fas fa-check"></i> <span data-i18n="plat2">25% Off extra sessions</span></li>
@@ -404,9 +425,10 @@
           <li><i class="fas fa-check"></i> <span data-i18n="plat4">Priority Support</span></li>
           <li><i class="fas fa-check"></i> <span data-i18n="plat5">5+30 days validity</span></li>
         </ul>
-        <div class="plan-calc-saving" id="platCalcSaving"></div>
+        <!-- JS will inject actual price row here, before this button -->
         <button class="btn-outline" onclick="navTo('contact')" data-i18n="joinPlatinum">Join Platinum</button>
       </div>
+
     </div>
 
     <div style="margin-top:60px">
@@ -416,6 +438,7 @@
         <div class="mem-test-card"><p>"Gold membership best value for money hai. Guest pass se maine apni wife ko bhi treat kiya!"</p><strong>— Vikram Joshi, Gold Member</strong></div>
       </div>
     </div>
+
     <div class="faqs-wrap" style="margin-top:60px">
       <h3 class="sec-h2" data-i18n="faqTitle">Frequently Asked Questions</h3>
       <div class="faq-list">
@@ -449,7 +472,6 @@
           <div class="stat-box"><strong>4.9★</strong><span data-i18n="statRating">Rating</span></div>
         </div>
       </div>
-      <!-- About image with skeleton -->
       <div class="about-img-wrap" style="position:relative;">
         <div class="about-img-skel skel-pulse" id="aboutImgSkel" style="position:absolute;inset:0;border-radius:20px;z-index:1;"></div>
         <img src="assets/about/sumansolanki.webp" alt="Mrs. Suman Solanki — Founder, Mauli Spa"
@@ -466,7 +488,7 @@
     <div class="team-grid">
       <div class="team-card">
         <div class="team-img-skel skel-pulse" id="ti1"></div>
-        <div class="team-img" style="background-image:url('assets/about/sumansolanki.webp')" onload_img="hideTeamSkel('ti1')"></div>
+        <div class="team-img" style="background-image:url('assets/about/sumansolanki.webp')"></div>
         <h4>Mrs. Suman Solanki</h4><p>Founder &amp; Head Therapist</p><small>15+ Years Experience</small>
       </div>
       <div class="team-card">
@@ -568,6 +590,7 @@
 </section>
 
 <!-- ═══ MORE ═══ -->
+<!-- FIX 1: mfc-hover-overlay removed from all 3 cards. Hover effect now only CSS border+lift via style_fixes.css -->
 <section id="page-more" class="page">
   <div class="page-banner" style="background-image:url('assets/more/more.webp')">
     <div class="pb-overlay"></div>
@@ -575,12 +598,9 @@
   </div>
   <div class="container" style="padding:60px 20px">
     <div class="more-cards-grid">
-      <!-- Refer card with hover overlay -->
+
+      <!-- REFER CARD — overlay div removed -->
       <div class="more-feature-card refer-card">
-        <div class="mfc-hover-overlay">
-          <i class="fas fa-gift mfc-hover-icon"></i>
-          <span data-i18n="referHoverText">Refer a friend &amp; earn discounts together!</span>
-        </div>
         <div class="mfc-icon"><i class="fas fa-gift"></i></div>
         <h3 data-i18n="referTitle">Refer &amp; Earn Discount</h3>
         <p data-i18n="referDesc">Refer a friend to Mauli Ayurvedic Massage and both get a discount! Valid on services above ₹1,500.</p>
@@ -596,12 +616,9 @@
         <button class="btn-gold" onclick="openReferModal()" data-i18n="referNow">Refer Now</button>
         <p class="terms-note" data-i18n="referTerms">*Terms apply. Valid on services above ₹1,500 only.</p>
       </div>
-      <!-- Team card with hover overlay -->
-      <div class="more-feature-card team-card">
-        <div class="mfc-hover-overlay">
-          <i class="fas fa-users mfc-hover-icon"></i>
-          <span data-i18n="joinTeamHoverText">Be part of our growing wellness family!</span>
-        </div>
+
+      <!-- TEAM CARD — overlay div removed -->
+      <div class="more-feature-card">
         <div class="mfc-icon"><i class="fas fa-users"></i></div>
         <h3 data-i18n="joinTeamTitle">Join Us as Team</h3>
         <p data-i18n="joinTeamDesc">Become part of Mauli Spa's growing family. Choose your work style!</p>
@@ -629,12 +646,9 @@
           </div>
         </div>
       </div>
-      <!-- Learning card with hover overlay -->
+
+      <!-- LEARNING CARD — overlay div removed -->
       <div class="more-feature-card learn-card">
-        <div class="mfc-hover-overlay">
-          <i class="fas fa-graduation-cap mfc-hover-icon"></i>
-          <span data-i18n="learningHoverText">Learn the art of Ayurvedic healing!</span>
-        </div>
         <div class="mfc-icon"><i class="fas fa-graduation-cap"></i></div>
         <h3 data-i18n="learningTitle">Learning Center</h3>
         <p data-i18n="learningDesc">Learn about Ayurveda and wellness. Courses and workshops available!</p>
@@ -649,7 +663,9 @@
         </div>
         <button class="btn-gold" onclick="openLearnModal()" data-i18n="learnEnroll">Enroll Now</button>
       </div>
+
     </div>
+
     <div class="more-quick-grid">
       <div class="mq-card" onclick="navTo('therapies')"><i class="fas fa-spa"></i><h4 data-i18n="qTherapies">All Therapies</h4></div>
       <div class="mq-card" onclick="navTo('membership')"><i class="fas fa-crown"></i><h4 data-i18n="qMembership">Membership</h4></div>
@@ -688,6 +704,7 @@
 </main>
 
 <!-- FOOTER -->
+<!-- FIX 2: footer-grid container padding mobile mein fixed via style_fixes.css -->
 <footer class="footer">
   <div class="footer-grid container">
     <div class="fc">
@@ -768,5 +785,7 @@
 <div class="modal-overlay" id="learnModal"><div class="modal-box" style="max-width:500px"><button class="modal-close-btn" onclick="closeModal('learnModal')"><i class="fas fa-times"></i></button><h2 style="font-family:var(--fd);color:var(--green);margin-bottom:16px">Enroll in Learning</h2><div class="form-group"><label>Your Name</label><input type="text" id="learnName" placeholder="Your name"></div><div class="form-group"><label>Phone</label><input type="tel" id="learnPhone" placeholder="+91 XXXXX XXXXX"></div><div class="form-group"><label>Choose Course</label><select id="learnCourse"><option>Ayurveda Basics</option><option>Massage Techniques</option><option>Oil &amp; Herb Knowledge</option><option>Certification Course</option></select></div><button class="btn-gold btn-full" onclick="submitLearn()">Enroll Now</button></div></div>
 
 <script src="script.js"></script>
+<!-- FIX PATCH: updateCalc override — must load AFTER script.js -->
+<script src="script_patch.js"></script>
 </body>
 </html>
